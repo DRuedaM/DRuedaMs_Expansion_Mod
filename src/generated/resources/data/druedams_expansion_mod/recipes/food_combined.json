@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:porkchop"
+    },
+    "H": {
+      "item": "minecraft:egg"
+    },
+    "P": {
+      "item": "minecraft:potato"
+    }
+  },
+  "pattern": [
+    "HBP"
+  ],
+  "result": {
+    "item": "druedams_expansion_mod:food_combined"
+  },
+  "show_notification": true
+}

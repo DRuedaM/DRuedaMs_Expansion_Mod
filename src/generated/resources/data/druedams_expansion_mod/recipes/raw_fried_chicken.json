@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:chicken"
+    },
+    "T": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "CT"
+  ],
+  "result": {
+    "item": "druedams_expansion_mod:raw_fried_chicken"
+  },
+  "show_notification": true
+}

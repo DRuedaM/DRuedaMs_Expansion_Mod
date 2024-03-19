@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "druedams_expansion_mod:chocolate_table"
+    },
+    "L": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "pattern": [
+    "LC"
+  ],
+  "result": {
+    "item": "druedams_expansion_mod:chocolate_milkshake"
+  },
+  "show_notification": true
+}

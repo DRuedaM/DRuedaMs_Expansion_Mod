@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "druedams_expansion_mod:item/raw_fried_chicken"
+  }
+}

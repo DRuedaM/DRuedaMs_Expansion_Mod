@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "ingredient": {
+    "item": "druedams_expansion_mod:raw_fried_chicken"
+  },
+  "result": "druedams_expansion_mod:fried_chicken"
+}

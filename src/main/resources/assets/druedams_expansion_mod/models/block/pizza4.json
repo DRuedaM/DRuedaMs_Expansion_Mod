@@ -1,0 +1,22 @@
+{
+  "textures": {
+    "particle": "druedams_expansion_mod:block/pizza_side",
+    "bottom": "druedams_expansion_mod:block/pizza_side",
+    "top": "druedams_expansion_mod:block/pizza_top",
+    "side": "druedams_expansion_mod:block/pizza_side",
+    "inside": "druedams_expansion_mod:block/pizza_side"
+  },
+  "elements": [
+    {   "from": [ 9, 0, 1 ],
+      "to": [ 15, 2, 15 ],
+      "faces": {
+        "down":  { "texture": "#bottom", "cullface": "down" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#inside" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}

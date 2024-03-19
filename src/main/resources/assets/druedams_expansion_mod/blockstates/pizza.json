@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "druedams_expansion_mod:block/pizza"
+    },
+    "bites=1": {
+      "model": "druedams_expansion_mod:block/pizza1"
+    },
+    "bites=2": {
+      "model": "druedams_expansion_mod:block/pizza2"
+    },
+    "bites=3": {
+      "model": "druedams_expansion_mod:block/pizza3"
+    },
+    "bites=4": {
+      "model": "druedams_expansion_mod:block/pizza4"
+    },
+    "bites=5": {
+      "model": "druedams_expansion_mod:block/pizza5"
+    },
+    "bites=6": {
+      "model": "druedams_expansion_mod:block/pizza6"
+    }
+  }
+}

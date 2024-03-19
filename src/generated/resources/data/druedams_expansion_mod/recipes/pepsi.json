@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:glass_bottle"
+    },
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "Z": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    "ACZ"
+  ],
+  "result": {
+    "item": "druedams_expansion_mod:pepsi"
+  },
+  "show_notification": true
+}

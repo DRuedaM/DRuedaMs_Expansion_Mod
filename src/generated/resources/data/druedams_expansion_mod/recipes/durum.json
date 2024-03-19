@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:beef"
+    },
+    "P": {
+      "item": "minecraft:bread"
+    },
+    "T": {
+      "item": "druedams_expansion_mod:tomato"
+    }
+  },
+  "pattern": [
+    "PCT"
+  ],
+  "result": {
+    "item": "druedams_expansion_mod:durum"
+  },
+  "show_notification": true
+}

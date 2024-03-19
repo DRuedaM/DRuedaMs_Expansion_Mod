@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:porkchop"
+    },
+    "P": {
+      "item": "minecraft:bread"
+    },
+    "Q": {
+      "item": "druedams_expansion_mod:cheese"
+    }
+  },
+  "pattern": [
+    "QCP"
+  ],
+  "result": {
+    "item": "druedams_expansion_mod:pork_cheese_sandwich"
+  },
+  "show_notification": true
+}

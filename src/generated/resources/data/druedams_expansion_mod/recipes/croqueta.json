@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:porkchop"
+    },
+    "L": {
+      "item": "minecraft:milk_bucket"
+    },
+    "P": {
+      "item": "minecraft:bread"
+    }
+  },
+  "pattern": [
+    "CLP"
+  ],
+  "result": {
+    "count": 6,
+    "item": "druedams_expansion_mod:croqueta"
+  },
+  "show_notification": true
+}
