@@ -4,6 +4,9 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
+/**
+ * Clase para crear las propiedades de comida de cada item
+ */
 public class ModFoods
 {
     //Class for creating food and his respective properties

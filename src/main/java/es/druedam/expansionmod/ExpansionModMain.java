@@ -16,7 +16,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
+/**
+ * La clase principal tan solo agrega al IEventBus
+ * todas las otras clases para que esta pueda agregar
+ * todo lo nuevo al juego base
+ */
 @Mod(ExpansionModMain.MOD_ID)
 public class ExpansionModMain
 {

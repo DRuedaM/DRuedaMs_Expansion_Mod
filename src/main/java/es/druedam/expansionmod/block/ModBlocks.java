@@ -15,6 +15,10 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
+/**
+ * Clase que se usa para registrar todos los objetos
+ * de tipo bloque al juego base
+ */
 public class ModBlocks
 {
     //Class for creating blocks like items and registering in the mod

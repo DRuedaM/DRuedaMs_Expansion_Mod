@@ -15,6 +15,9 @@ import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import java.util.List;
 import java.util.function.Consumer;
 
+/**
+ * Clase donde se definen todos los crafteos de los items
+ */
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder
 {
     public ModRecipeProvider(PackOutput pOutput) {

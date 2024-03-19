@@ -10,10 +10,15 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
+/**
+ * Esta clase solo agrega los items del mod
+ * a una nueva pestana del modo creativo donde encontrar
+ * de forma especifia los items de este mod
+ */
 public class CreativeModeTabs
 {
 
-    //Creamos la variable para registrar
+    //Creamos la variable para registrar los elementos en el modo creativo en una ventana aparte
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
         DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ExpansionModMain.MOD_ID);
 

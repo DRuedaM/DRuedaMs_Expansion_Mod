@@ -10,6 +10,10 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
+/**
+ * Clase donde agregamos los items que queremos
+ * generar json de forma automatica con el datagen
+ */
 public class ModItemModelProvider extends ItemModelProvider
 {
 
