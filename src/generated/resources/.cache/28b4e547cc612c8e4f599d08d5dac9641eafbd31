@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-19T12:06:53.2881597	Item Models: druedams_expansion_mod
+// 1.20.1	2024-03-22T13:14:53.0118188	Item Models: druedams_expansion_mod
 7e97cdcc2117da9351806cd47e496f9260a9f6a2 assets/druedams_expansion_mod/models/item/burger.json
 b60f0c83fd15c29672c4504cc146541bc3bbc2e4 assets/druedams_expansion_mod/models/item/campurriana.json
 f776338cd8374477d4774ab74c0e458a49bfd661 assets/druedams_expansion_mod/models/item/cheese.json
@@ -12,4 +12,6 @@ fae2156b8110d81ef033fa48d294a21dfb03a6d2 assets/druedams_expansion_mod/models/it
 e23e05011faeac9235025122e338259762e8e80c assets/druedams_expansion_mod/models/item/pork_cheese_sandwich.json
 676bdaf3aa903a5bdd4167de88cad42b8e2fac33 assets/druedams_expansion_mod/models/item/raw_fried_chicken.json
 e959e6eba7d90580c02ef6ed3b1f89972b52ed9b assets/druedams_expansion_mod/models/item/strawberry.json
+91c2269c6a3568b90db33ff96006d4e41908addc assets/druedams_expansion_mod/models/item/strawberry_seeds.json
 3867729f2970ca678495885130e79dd45a0f5baf assets/druedams_expansion_mod/models/item/tomato.json
+88cc3956d877cc45b8a2738fd0840baa894ae65d assets/druedams_expansion_mod/models/item/tomato_seeds.json

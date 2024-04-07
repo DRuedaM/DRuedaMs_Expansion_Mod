@@ -1,0 +1,10 @@
+{
+  "type": "druedams_expansion_mod:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village_butcher"
+    }
+  ],
+  "item": "druedams_expansion_mod:raw_fried_chicken"
+}

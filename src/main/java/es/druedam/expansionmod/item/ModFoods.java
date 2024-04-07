@@ -20,16 +20,16 @@ public class ModFoods
 
     public static final FoodProperties PEPSI = new FoodProperties.Builder().nutrition(2).
             saturationMod(0f).effect(() -> new MobEffectInstance(MobEffects.WITHER,
-                    500), 1f).alwaysEat().build();
+                    500), 0.1f).effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 500), 0.5f).alwaysEat().build();
 
     public static final FoodProperties CAMPURRIANA = new FoodProperties.Builder().nutrition(3).
-            saturationMod(0.2f).fast().build();
+            saturationMod(0.2f).alwaysEat().fast().build();
 
     public static final FoodProperties CROQUETTE = new FoodProperties.Builder().nutrition(3).
             saturationMod(0.4f).meat().fast().build();
 
     public static final FoodProperties STRAWBERRY = new FoodProperties.Builder().nutrition(2).
-            saturationMod(0.1f).fast().effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 500), 0.2f).build();
+            saturationMod(0.1f).fast().effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 500), 0.2f).alwaysEat().build();
 
     public static final FoodProperties CHEESE = new FoodProperties.Builder().nutrition(2).
             saturationMod(0.5f).build();
@@ -47,7 +47,7 @@ public class ModFoods
             saturationMod(0.2f).build();
 
     public static final FoodProperties DURUM = new FoodProperties.Builder().nutrition(10).
-            saturationMod(1f).effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 750), 0.5f).build();
+            saturationMod(1f).effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 250), 0.25f).build();
 
     public static final FoodProperties BURGER = new FoodProperties.Builder().nutrition(10).
             saturationMod(0.7f).build();

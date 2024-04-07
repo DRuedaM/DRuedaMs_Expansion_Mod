@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import es.druedam.expansionmod.block.ModBlocks;
 import es.druedam.expansionmod.item.CreativeModeTabs;
 import es.druedam.expansionmod.item.ModItems;
+import es.druedam.expansionmod.loot.ModLootModifiers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -33,10 +34,12 @@ public class ExpansionModMain
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        //Aqui registramos todas las clases que contengan items/bloques y demas para insertarlos en el juego original
+        //Aqui registramos todas las clases que contengan items/bloques y demas para agregarlos en el juego original
         CreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

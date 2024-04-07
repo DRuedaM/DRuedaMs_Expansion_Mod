@@ -39,6 +39,8 @@ public class ModItemModelProvider extends ItemModelProvider
         simpleItem(ModItems.DURUM);
         simpleItem(ModItems.BURGER);
         simpleItem(ModItems.FOOD_COMBINED);
+        simpleItem(ModItems.TOMATO_SEEDS);
+        simpleItem(ModItems.STRAWBERRY_SEEDS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item)

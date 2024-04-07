@@ -42,7 +42,8 @@ public class CreativeModeTabs
                         output.accept(ModItems.STRAWBERRY.get());
                         output.accept(ModItems.TOMATO.get());
                         output.accept(ModBlocks.PIZZA.get());
-
+                        output.accept(ModItems.STRAWBERRY_SEEDS.get());
+                        output.accept(ModItems.TOMATO_SEEDS.get());
 
                     }).build());
 

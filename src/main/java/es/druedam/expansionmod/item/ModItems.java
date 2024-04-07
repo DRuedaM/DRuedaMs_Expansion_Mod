@@ -1,7 +1,9 @@
 package es.druedam.expansionmod.item;
 
 import es.druedam.expansionmod.ExpansionModMain;
+import es.druedam.expansionmod.block.ModBlocks;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -65,6 +67,12 @@ public class ModItems
 
     public static final RegistryObject<Item> FOOD_COMBINED = ITEMS.register("food_combined",
             () -> new Item(new Item.Properties().food(ModFoods.FOOD_COMBINED).stacksTo(1)));
+
+    public static final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
 
 
     //Metodo para registrar en el bus principal del juego todos los items de la clase

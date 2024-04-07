@@ -2,6 +2,8 @@ package es.druedam.expansionmod.block;
 
 import es.druedam.expansionmod.ExpansionModMain;
 import es.druedam.expansionmod.block.custom.PizzaBlock;
+import es.druedam.expansionmod.block.custom.StrawberryCropBlock;
+import es.druedam.expansionmod.block.custom.TomatoCropBlock;
 import es.druedam.expansionmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -21,14 +23,17 @@ import java.util.function.Supplier;
  */
 public class ModBlocks
 {
-    //Class for creating blocks like items and registering in the mod
-
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, ExpansionModMain.MOD_ID);
 
-
     public static final RegistryObject<Block> PIZZA = registerBlock("pizza",
             () -> new PizzaBlock(BlockBehaviour.Properties.copy(Blocks.CAKE).noLootTable()),1);
+
+    public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
+            () -> new TomatoCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().noOcclusion()));
+
+    public static final RegistryObject<Block> STRAWBERRY_CROP = BLOCKS.register("strawberry_crop",
+            () -> new StrawberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
