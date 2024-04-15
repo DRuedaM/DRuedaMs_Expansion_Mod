@@ -2,8 +2,7 @@ package es.druedam.expansionmod.item;
 
 import es.druedam.expansionmod.ExpansionModMain;
 import es.druedam.expansionmod.block.ModBlocks;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -76,6 +75,21 @@ public class ModItems
 
     public static final RegistryObject<Item> FLUORITE_INGOT = ITEMS.register("fluorite_ingot",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> FLUORITE_SWORD = ITEMS.register("fluorite_sword",
+            () -> new SwordItem(ModToolTiers.FLUORITE, 2,3,new Item.Properties()));
+
+    public static final RegistryObject<Item> FLUORITE_SHOVEL = ITEMS.register("fluorite_shovel",
+            () -> new ShovelItem(ModToolTiers.FLUORITE, 1,1,new Item.Properties()));
+
+    public static final RegistryObject<Item> FLUROTIE_PICKAXE = ITEMS.register("fluorite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.FLUORITE, 1,2,new Item.Properties()));
+
+    public static final RegistryObject<Item> FLUORITE_AXE = ITEMS.register("fluorite_axe",
+            () -> new AxeItem(ModToolTiers.FLUORITE, 2,3 ,new Item.Properties()));
+
+    public static final RegistryObject<Item> FLUORITE_HOE = ITEMS.register("fluorite_hoe",
+            () -> new HoeItem(ModToolTiers.FLUORITE, 2,3 ,new Item.Properties()));
 
 
     //Metodo para registrar en el bus principal del juego todos los items de la clase

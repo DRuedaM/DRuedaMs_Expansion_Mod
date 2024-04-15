@@ -42,6 +42,14 @@ public class ModItemModelProvider extends ItemModelProvider
         simpleItem(ModItems.TOMATO_SEEDS);
         simpleItem(ModItems.STRAWBERRY_SEEDS);
         simpleItem(ModItems.FLUORITE_INGOT);
+
+        simpleItem(ModItems.FLUROTIE_PICKAXE);
+        simpleItem(ModItems.FLUORITE_AXE);
+        simpleItem(ModItems.FLUORITE_SWORD);
+        simpleItem(ModItems.FLUORITE_HOE);
+        simpleItem(ModItems.FLUORITE_SHOVEL);
+
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item)
@@ -50,4 +58,13 @@ public class ModItemModelProvider extends ItemModelProvider
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(ExpansionModMain.MOD_ID, "item/" + item.getId().getPath()));
     }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item)
+    {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(ExpansionModMain.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+
 }
