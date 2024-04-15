@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-22T13:14:53.0118188	Item Models: druedams_expansion_mod
+// 1.20.1	2024-04-13T12:48:24.8101033	Item Models: druedams_expansion_mod
 7e97cdcc2117da9351806cd47e496f9260a9f6a2 assets/druedams_expansion_mod/models/item/burger.json
 b60f0c83fd15c29672c4504cc146541bc3bbc2e4 assets/druedams_expansion_mod/models/item/campurriana.json
 f776338cd8374477d4774ab74c0e458a49bfd661 assets/druedams_expansion_mod/models/item/cheese.json
@@ -6,6 +6,7 @@ f776338cd8374477d4774ab74c0e458a49bfd661 assets/druedams_expansion_mod/models/it
 63bb83ea0c89b97b2a7d49abf88acd6da0132bc0 assets/druedams_expansion_mod/models/item/chocolate_table.json
 fae2156b8110d81ef033fa48d294a21dfb03a6d2 assets/druedams_expansion_mod/models/item/croqueta.json
 8835c91841c1a7e4d9f8c59b3b8adc7b5e08f3f6 assets/druedams_expansion_mod/models/item/durum.json
+a8b2fd89d5fce902ff489bd1334d1f34b9ac1df4 assets/druedams_expansion_mod/models/item/fluorite_ingot.json
 970cbabc5caf0058acd28e568764e3fd0d533e2d assets/druedams_expansion_mod/models/item/food_combined.json
 6c392bcb252d0afec6bf9963674d537c1cd0fbfe assets/druedams_expansion_mod/models/item/fried_chicken.json
 2bb9db8e540214ca16f8c350da80e07a845139d0 assets/druedams_expansion_mod/models/item/pepsi.json

@@ -13,7 +13,7 @@ import java.util.concurrent.CompletableFuture;
 
 /**
  * Clase encargada de generar de forma automatica
- * los json de todos los items, crafteos, texturas y demas
+ * los json de todos los items, crafteos, texturas y demás
  */
 @Mod.EventBusSubscriber(modid = ExpansionModMain.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators

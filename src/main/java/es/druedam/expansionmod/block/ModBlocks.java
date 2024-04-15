@@ -26,6 +26,9 @@ public class ModBlocks
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, ExpansionModMain.MOD_ID);
 
+    public static final RegistryObject<Block> ORE_FLUORITE = registerBlock("ore_fluorite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+
     public static final RegistryObject<Block> PIZZA = registerBlock("pizza",
             () -> new PizzaBlock(BlockBehaviour.Properties.copy(Blocks.CAKE).noLootTable()),1);
 

@@ -44,7 +44,8 @@ public class CreativeModeTabs
                         output.accept(ModBlocks.PIZZA.get());
                         output.accept(ModItems.STRAWBERRY_SEEDS.get());
                         output.accept(ModItems.TOMATO_SEEDS.get());
-
+                        output.accept(ModBlocks.ORE_FLUORITE.get());
+                        output.accept(ModItems.FLUORITE_INGOT.get());
                     }).build());
 
 

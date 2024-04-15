@@ -17,6 +17,9 @@
   "item.minecraft.pepsi": "Pepsi",
   "item.druedams_expansion_mod.tomato_seeds": "Tomato seeds",
   "item.druedams_expansion_mod.strawberry_seeds": "Strawberry seeds",
+  "block.druedams_expansion_mod.ore_fluorite": "Fluorite Ore",
+  "item.druedams_expansion_mod.fluorite_ingot": "Fuorite ingot",
+
 
   "creativetab.expansion_tab": "DRuedaM's Expansion Pack Mod"
 }
