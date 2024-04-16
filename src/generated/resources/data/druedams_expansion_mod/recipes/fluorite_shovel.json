@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": {
+      "item": "druedams_expansion_mod:fluorite_ingot"
+    },
+    "P": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "F",
+    "P",
+    "P"
+  ],
+  "result": {
+    "item": "druedams_expansion_mod:fluorite_shovel"
+  },
+  "show_notification": true
+}

@@ -119,6 +119,51 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.BREAD), has(Items.BREAD))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.FLUORITE_SWORD.get())
+                .pattern("F")
+                .pattern("F")
+                .pattern("P")
+                .define('F', ModItems.FLUORITE_INGOT.get())
+                .define('P', Items.STICK)
+                .unlockedBy(getHasName(ModItems.FLUORITE_INGOT.get()), has(ModItems.FLUORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.FLUORITE_AXE.get())
+                .pattern("FF ")
+                .pattern("FP ")
+                .pattern(" P ")
+                .define('F', ModItems.FLUORITE_INGOT.get())
+                .define('P', Items.STICK)
+                .unlockedBy(getHasName(ModItems.FLUORITE_INGOT.get()), has(ModItems.FLUORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.FLUORITE_SHOVEL.get())
+                .pattern("F")
+                .pattern("P")
+                .pattern("P")
+                .define('F', ModItems.FLUORITE_INGOT.get())
+                .define('P', Items.STICK)
+                .unlockedBy(getHasName(ModItems.FLUORITE_INGOT.get()), has(ModItems.FLUORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.FLUORITE_HOE.get())
+                .pattern("FF ")
+                .pattern(" P ")
+                .pattern(" P ")
+                .define('F', ModItems.FLUORITE_INGOT.get())
+                .define('P', Items.STICK)
+                .unlockedBy(getHasName(ModItems.FLUORITE_INGOT.get()), has(ModItems.FLUORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.FLUROTIE_PICKAXE.get())
+                .pattern("FFF")
+                .pattern(" P ")
+                .pattern(" P ")
+                .define('F', ModItems.FLUORITE_INGOT.get())
+                .define('P', Items.STICK)
+                .unlockedBy(getHasName(ModItems.FLUORITE_INGOT.get()), has(ModItems.FLUORITE_INGOT.get()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHEESE.get(), 3)
                 .requires(Items.MILK_BUCKET)
                 .unlockedBy(getHasName(Items.MILK_BUCKET), has(Items.MILK_BUCKET))
