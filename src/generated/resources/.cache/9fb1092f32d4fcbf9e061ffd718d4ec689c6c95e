@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-16T09:25:08.652031	Recipes
+// 1.20.1	2024-04-16T11:50:33.1268265	Recipes
 e3560bbcdb0ef73449b2300abf1a99e41a1eed39 data/druedams_expansion_mod/advancements/recipes/combat/fluorite_sword.json
 29633908a3d43be9a66973cd98672b46b985a7c9 data/druedams_expansion_mod/advancements/recipes/food/burger.json
 4f23857211729f191fc0910e62370ec3546e9304 data/druedams_expansion_mod/advancements/recipes/food/campurriana.json
@@ -24,8 +24,8 @@ a007dad706774a986fe33a0b6ae84903721b0fe5 data/druedams_expansion_mod/recipes/cam
 184f5335ac982a0b7bde89331c6c2b617dccb83d data/druedams_expansion_mod/recipes/chocolate_table.json
 877960eb6ac755de02489bdb6f261606290da482 data/druedams_expansion_mod/recipes/croqueta.json
 1578127285ace410288de1081251f6d222552a80 data/druedams_expansion_mod/recipes/durum.json
-dc2cc400ebcf1afef29a464e65747c79da9beecb data/druedams_expansion_mod/recipes/fluorite_axe.json
-e29748a9cc9c10a9a56703cd347c44963c50837c data/druedams_expansion_mod/recipes/fluorite_hoe.json
+a43d15157e493d1cfde7b27901a1f76f1544ac2d data/druedams_expansion_mod/recipes/fluorite_axe.json
+ddb44a26e0932dc4b3fc80532fc091020e4fa9e0 data/druedams_expansion_mod/recipes/fluorite_hoe.json
 bd3e2dc625b002c6972d5e005644984aa7b964e5 data/druedams_expansion_mod/recipes/fluorite_pickaxe.json
 eaad5c6e25490f15bf093d72b0ab1bf6b696e451 data/druedams_expansion_mod/recipes/fluorite_shovel.json
 520763ae6a1e820348fc42a9b75b26c4f3365637 data/druedams_expansion_mod/recipes/fluorite_sword.json

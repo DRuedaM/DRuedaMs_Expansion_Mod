@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    "FF",
-    "P ",
-    "P "
+    "FF ",
+    " P ",
+    " P "
   ],
   "result": {
     "item": "druedams_expansion_mod:fluorite_hoe"

@@ -14,7 +14,7 @@ import java.util.List;
 public class ModToolTiers
 {
     public static final Tier FLUORITE = TierSortingRegistry.registerTier(
-            new ForgeTier(5,95,4f,1f,5,
+            new ForgeTier(5,115,1f,1f,5,
             ModTags.Blocks.NEEDS_FLUORITE, () -> Ingredient.of(ModItems.FLUORITE_INGOT.get())),
             new ResourceLocation(ExpansionModMain.MOD_ID, "fluorite"), List.of(Tiers.NETHERITE), List.of());
 }

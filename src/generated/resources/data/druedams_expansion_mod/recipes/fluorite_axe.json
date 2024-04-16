@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    "FF",
-    "PF",
-    "P "
+    "FF ",
+    "FP ",
+    " P "
   ],
   "result": {
     "item": "druedams_expansion_mod:fluorite_axe"
