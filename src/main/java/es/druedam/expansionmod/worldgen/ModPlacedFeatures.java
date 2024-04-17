@@ -25,7 +25,7 @@ public class ModPlacedFeatures
         HolderGetter<ConfiguredFeature<?,?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, FLUORITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguresFeatures.OVERWORLD_FLUORITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(90,
+                ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-24), VerticalAnchor.absolute(56))));
     }
 
