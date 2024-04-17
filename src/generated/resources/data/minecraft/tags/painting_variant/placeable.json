@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "druedams_expansion_mod:mouse",
+      "required": false
+    },
+    {
+      "id": "druedams_expansion_mod:sad_mouse",
+      "required": false
+    }
+  ]
+}

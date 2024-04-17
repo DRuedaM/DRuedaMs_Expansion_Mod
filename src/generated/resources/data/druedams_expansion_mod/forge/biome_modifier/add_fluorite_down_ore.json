@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "druedams_expansion_mod:fluorite_ore_placed",
+  "features": "druedams_expansion_mod:fluorite_ore_placed_down",
   "step": "underground_ores"
 }

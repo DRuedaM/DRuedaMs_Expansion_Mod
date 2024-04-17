@@ -14,7 +14,7 @@
   "item.druedams_expansion_mod.durum": "Durum",
   "item.druedams_expansion_mod.food_combined": "Food combined",
   "block.druedams_expansion_mod.pizza": "Pizza",
-  "item.minecraft.pepsi": "Pepsi",
+  "item.minecraft.pepsi": "Pespi",
   "item.druedams_expansion_mod.tomato_seeds": "Tomato seeds",
   "item.druedams_expansion_mod.strawberry_seeds": "Strawberry seeds",
   "block.druedams_expansion_mod.ore_fluorite": "Fluorite Ore",
@@ -25,6 +25,10 @@
   "item.druedams_expansion_mod.fluorite_shovel": "Fluorite shovel",
   "item.druedams_expansion_mod.fluorite_hoe": "Fluorite ingot",
   "entity.minecraft.villager.druedams_expansion_mod.michael_jackson": "Michael Jackson",
+  "painting.druedams_expansion_mod.mouse.title": "Mouse",
+  "painting.druedams_expansion_mod.mouse.author": "Stuart Little",
+  "painting.druedams_expansion_mod.sad_mouse.title": "Sad Mouse",
+  "painting.druedams_expansion_mod.sad_mouse.author": "Internet",
 
 
 
