@@ -155,7 +155,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.FLUORITE_INGOT.get()), has(ModItems.FLUORITE_INGOT.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.FLUROTIE_PICKAXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.FLUORITE_PICKAXE.get())
                 .pattern("FFF")
                 .pattern(" P ")
                 .pattern(" P ")

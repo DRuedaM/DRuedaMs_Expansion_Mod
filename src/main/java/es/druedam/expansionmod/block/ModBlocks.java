@@ -5,10 +5,12 @@ import es.druedam.expansionmod.block.custom.PizzaBlock;
 import es.druedam.expansionmod.block.custom.StrawberryCropBlock;
 import es.druedam.expansionmod.block.custom.TomatoCropBlock;
 import es.druedam.expansionmod.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -27,7 +29,7 @@ public class ModBlocks
             DeferredRegister.create(ForgeRegistries.BLOCKS, ExpansionModMain.MOD_ID);
 
     public static final RegistryObject<Block> ORE_FLUORITE = registerBlock("ore_fluorite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE), UniformInt.of(2,5)));
 
     public static final RegistryObject<Block> PIZZA = registerBlock("pizza",
             () -> new PizzaBlock(BlockBehaviour.Properties.copy(Blocks.CAKE).noLootTable()),1);

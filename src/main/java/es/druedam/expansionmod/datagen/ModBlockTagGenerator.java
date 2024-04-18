@@ -25,5 +25,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ORE_FLUORITE.get());
 
+        this.tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.ORE_FLUORITE.get());
+
     }
 }

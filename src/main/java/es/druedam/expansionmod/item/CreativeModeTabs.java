@@ -50,7 +50,7 @@ public class CreativeModeTabs
                         output.accept(ModItems.FLUORITE_SWORD.get());
                         output.accept(ModItems.FLUORITE_AXE.get());
                         output.accept(ModItems.FLUORITE_SHOVEL.get());
-                        output.accept(ModItems.FLUROTIE_PICKAXE.get());
+                        output.accept(ModItems.FLUORITE_PICKAXE.get());
                         output.accept(ModItems.FLUORITE_HOE.get());
                     }).build());
 

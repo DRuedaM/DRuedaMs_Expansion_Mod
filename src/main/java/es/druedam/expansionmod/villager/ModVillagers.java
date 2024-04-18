@@ -21,7 +21,7 @@ public class ModVillagers
 
 
     public static final RegistryObject<PoiType> SOUND_POI = POI_TYPES.register("sound_poi",
-            () -> new PoiType(ImmutableSet.copyOf(Blocks.CRAFTING_TABLE.getStateDefinition().getPossibleStates()),
+            () -> new PoiType(ImmutableSet.copyOf(Blocks.NOTE_BLOCK.getStateDefinition().getPossibleStates()),
                     1, 1));
 
     public static final RegistryObject<VillagerProfession> MICHAEL_JACKSON =

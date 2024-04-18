@@ -43,6 +43,8 @@ public class ExpansionModMain
         ModLootModifiers.register(modEventBus);
         ModVillagers.register(modEventBus);
         ModPaintings.register(modEventBus);
+
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

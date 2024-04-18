@@ -18,6 +18,18 @@ public class ModPaintings
     public static final RegistryObject<PaintingVariant> SAD_MOUSE =  PAINTING_VARIANTS.register("sad_mouse",
             () -> new PaintingVariant(32,32));
 
+    public static final RegistryObject<PaintingVariant> ULTRAKILL =  PAINTING_VARIANTS.register("ultrakill",
+            () -> new PaintingVariant(32,64));
+
+    public static final RegistryObject<PaintingVariant> RODRICK =  PAINTING_VARIANTS.register("rodrick",
+            () -> new PaintingVariant(32,32));
+
+    public static final RegistryObject<PaintingVariant> SPAIN_FLAG =  PAINTING_VARIANTS.register("spain_flag",
+            () -> new PaintingVariant(32,16));
+
+    public static final RegistryObject<PaintingVariant> BROCOLI =  PAINTING_VARIANTS.register("brocoli",
+            () -> new PaintingVariant(32,16));
+
 
 
     public static void register(IEventBus eventBus)

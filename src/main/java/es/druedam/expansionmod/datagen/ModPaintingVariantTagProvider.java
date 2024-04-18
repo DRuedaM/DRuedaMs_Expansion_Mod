@@ -22,6 +22,10 @@ public class ModPaintingVariantTagProvider extends PaintingVariantTagsProvider
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(PaintingVariantTags.PLACEABLE)
                 .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "mouse"))
-                .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "sad_mouse"));
+                .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "sad_mouse"))
+                .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "ultrakill"))
+                .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "rodrick"))
+                .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "spain_flag"))
+                .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "brocoli"));
     }
 }

@@ -7,6 +7,22 @@
     {
       "id": "druedams_expansion_mod:sad_mouse",
       "required": false
+    },
+    {
+      "id": "druedams_expansion_mod:ultrakill",
+      "required": false
+    },
+    {
+      "id": "druedams_expansion_mod:rodrick",
+      "required": false
+    },
+    {
+      "id": "druedams_expansion_mod:spain_flag",
+      "required": false
+    },
+    {
+      "id": "druedams_expansion_mod:brocoli",
+      "required": false
     }
   ]
 }
