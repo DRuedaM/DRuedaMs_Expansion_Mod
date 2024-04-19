@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-15T13:40:42.0751986	Item Models: druedams_expansion_mod
+// 1.20.1	2024-04-19T13:26:43.2971388	Item Models: druedams_expansion_mod
 7e97cdcc2117da9351806cd47e496f9260a9f6a2 assets/druedams_expansion_mod/models/item/burger.json
 b60f0c83fd15c29672c4504cc146541bc3bbc2e4 assets/druedams_expansion_mod/models/item/campurriana.json
 f776338cd8374477d4774ab74c0e458a49bfd661 assets/druedams_expansion_mod/models/item/cheese.json
@@ -7,8 +7,12 @@ f776338cd8374477d4774ab74c0e458a49bfd661 assets/druedams_expansion_mod/models/it
 fae2156b8110d81ef033fa48d294a21dfb03a6d2 assets/druedams_expansion_mod/models/item/croqueta.json
 8835c91841c1a7e4d9f8c59b3b8adc7b5e08f3f6 assets/druedams_expansion_mod/models/item/durum.json
 b8e4d08e751655255de44b733c2a588fb2602f69 assets/druedams_expansion_mod/models/item/fluorite_axe.json
+412c515b8b2e58212cd09588f29d2cd174d14189 assets/druedams_expansion_mod/models/item/fluorite_boots.json
+d83308eaa2f6430a42080fece8da8e6e7300581b assets/druedams_expansion_mod/models/item/fluorite_chestplate.json
+2bc572206bb26b8c665e3cf318bd89124237d370 assets/druedams_expansion_mod/models/item/fluorite_helmet.json
 d8b43287e0983cfe5df574aebe03e7fbb16216f0 assets/druedams_expansion_mod/models/item/fluorite_hoe.json
 a8b2fd89d5fce902ff489bd1334d1f34b9ac1df4 assets/druedams_expansion_mod/models/item/fluorite_ingot.json
+f2b9764193f6d94988c13257cd327e5410e66ea7 assets/druedams_expansion_mod/models/item/fluorite_leggings.json
 d14830cf044a7f3ab1de969310bf0faf9a98c996 assets/druedams_expansion_mod/models/item/fluorite_pickaxe.json
 dcb16045315cfd35a6a2466b53f7086ad707ecea assets/druedams_expansion_mod/models/item/fluorite_shovel.json
 e9754249b7ec4c0d5b85e796ceec85b41cad64b7 assets/druedams_expansion_mod/models/item/fluorite_sword.json

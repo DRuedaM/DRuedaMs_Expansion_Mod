@@ -30,6 +30,12 @@ public class ModPaintings
     public static final RegistryObject<PaintingVariant> BROCOLI =  PAINTING_VARIANTS.register("brocoli",
             () -> new PaintingVariant(32,16));
 
+    public static final RegistryObject<PaintingVariant> MICHAEL_JACKSON =  PAINTING_VARIANTS.register("michael_jackson",
+            () -> new PaintingVariant(48,64));
+
+    public static final RegistryObject<PaintingVariant> AMONG_US =  PAINTING_VARIANTS.register("among_us",
+            () -> new PaintingVariant(16,16));
+
 
 
     public static void register(IEventBus eventBus)

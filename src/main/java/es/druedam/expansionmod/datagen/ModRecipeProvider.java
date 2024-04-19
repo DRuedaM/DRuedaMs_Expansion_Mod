@@ -169,6 +169,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.MILK_BUCKET), has(Items.MILK_BUCKET))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.FLUORITE_HELMET.get())
+                .pattern("FFF")
+                .pattern("F F")
+                .define('F', ModItems.FLUORITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.FLUORITE_INGOT.get()), has(ModItems.FLUORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.FLUORITE_CHESTPLATE.get())
+                .pattern("F F")
+                .pattern("FFF")
+                .pattern("FFF")
+                .define('F', ModItems.FLUORITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.FLUORITE_INGOT.get()), has(ModItems.FLUORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.FLUORITE_LEGGINGS.get())
+                .pattern("FFF")
+                .pattern("F F")
+                .pattern("F F")
+                .define('F', ModItems.FLUORITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.FLUORITE_INGOT.get()), has(ModItems.FLUORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.FLUORITE_BOOTS.get())
+                .pattern("F F")
+                .pattern("F F")
+                .define('F', ModItems.FLUORITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.FLUORITE_INGOT.get()), has(ModItems.FLUORITE_INGOT.get()))
+                .save(pWriter);
+
 
         oreCooking(pWriter, RecipeSerializer.SMELTING_RECIPE, List.of(ModItems.RAW_FRIED_CHICKEN.get()), RecipeCategory.FOOD, ModItems.FRIED_CHICKEN.get(), 0.2f, 200, "","");
     }

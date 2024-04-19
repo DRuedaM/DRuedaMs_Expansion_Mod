@@ -23,6 +23,14 @@
     {
       "id": "druedams_expansion_mod:brocoli",
       "required": false
+    },
+    {
+      "id": "druedams_expansion_mod:michael_jackson",
+      "required": false
+    },
+    {
+      "id": "druedams_expansion_mod:among_us",
+      "required": false
     }
   ]
 }

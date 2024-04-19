@@ -7,7 +7,12 @@ import es.druedam.expansionmod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -33,8 +38,15 @@ public class ModBlockLootTables extends BlockLootSubProvider
                 .hasBlockStateProperties(ModBlocks.TOMATO_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TomatoCropBlock.AGE, 4));
 
-        this.add(ModBlocks.TOMATO_CROP.get(), createCropDrops(ModBlocks.TOMATO_CROP.get(), ModItems.TOMATO.get(),
-                        ModItems.TOMATO_SEEDS.get(), lootitemcondition$builder));
+        this.add(ModBlocks.TOMATO_CROP.get(),
+                this.applyExplosionDecay(ModBlocks.TOMATO_CROP.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool()
+                                        .add(LootItem.lootTableItem(ModItems.TOMATO.get())))
+                                .withPool(LootPool.lootPool()
+                                        .when(lootitemcondition$builder)
+                                        .add(LootItem.lootTableItem(ModItems.TOMATO.get())
+                                                .apply(ApplyBonusCount
+                                                        .addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2))))));
 
 
         //Condition to crop strawberry drop the tomatoes
@@ -42,8 +54,16 @@ public class ModBlockLootTables extends BlockLootSubProvider
                 .hasBlockStateProperties(ModBlocks.STRAWBERRY_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StrawberryCropBlock.AGE, 7));
 
-        this.add(ModBlocks.STRAWBERRY_CROP.get(), createCropDrops(ModBlocks.STRAWBERRY_CROP.get(), ModItems.STRAWBERRY.get(),
-                ModItems.STRAWBERRY_SEEDS.get(), lootitemcondition$builder_strawberry));
+        this.add(ModBlocks.STRAWBERRY_CROP.get(),
+                this.applyExplosionDecay(ModBlocks.STRAWBERRY_CROP.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool()
+                                        .add(LootItem.lootTableItem(ModItems.STRAWBERRY.get())))
+                                .withPool(LootPool.lootPool()
+                                        .when(lootitemcondition$builder_strawberry)
+                                        .add(LootItem.lootTableItem(ModItems.STRAWBERRY.get())
+                                                .apply(ApplyBonusCount
+                                                        .addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 3))))));
+
 
         //Conditions to drop one or more minerals of fluorite
         this.add(ModBlocks.ORE_FLUORITE.get(),

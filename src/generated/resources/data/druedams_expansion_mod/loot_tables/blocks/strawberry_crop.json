@@ -10,26 +10,8 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "block": "druedams_expansion_mod:strawberry_crop",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "age": "7"
-                  }
-                }
-              ],
-              "name": "druedams_expansion_mod:strawberry"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "druedams_expansion_mod:strawberry_seeds"
-            }
-          ]
+          "type": "minecraft:item",
+          "name": "druedams_expansion_mod:strawberry"
         }
       ],
       "rolls": 1.0
@@ -59,7 +41,7 @@
               }
             }
           ],
-          "name": "druedams_expansion_mod:strawberry_seeds"
+          "name": "druedams_expansion_mod:strawberry"
         }
       ],
       "rolls": 1.0

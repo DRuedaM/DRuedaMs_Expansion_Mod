@@ -14,9 +14,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModBiomeModifiers
 {
-    public static final ResourceKey<BiomeModifier> ADD_FLUORITE_UPPER_ORE = registerKey("add_fluorite_upper_ore");
-    public static final ResourceKey<BiomeModifier> ADD_FLUORITE_MIDDLE_ORE = registerKey("add_fluorite_middle_ore");
-    public static final ResourceKey<BiomeModifier> ADD_FLUORITE_DOWN_ORE = registerKey("add_fluorite_down_ore");
+    public static final ResourceKey<BiomeModifier> ADD_FLUORITE_SEVEN_ORE = registerKey("add_fluorite_seven_ore");
+    public static final ResourceKey<BiomeModifier> ADD_FLUORITE_FIVE_ORE = registerKey("add_fluorite_five_ore");
+    public static final ResourceKey<BiomeModifier> ADD_FLUORITE_TWO_ORE = registerKey("add_fluorite_two_ore");
 
 
     public static void bootstrap(BootstapContext<BiomeModifier> context)
@@ -24,19 +24,19 @@ public class ModBiomeModifiers
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
 
-        context.register(ADD_FLUORITE_UPPER_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_FLUORITE_SEVEN_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FLUORITE_ORE_PLACED_UPPER_KEY)),
-                        GenerationStep.Decoration.UNDERGROUND_ORES));
-
-        context.register(ADD_FLUORITE_MIDDLE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FLUORITE_ORE_PLACED_MIDDLE_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FLUORITE_ORE_PLACED_SEVEN_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_FLUORITE_DOWN_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_FLUORITE_FIVE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FLUORITE_ORE_PLACED_DOWN_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FLUORITE_ORE_PLACED_FIVE_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_FLUORITE_TWO_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FLUORITE_ORE_PLACED_TWO_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
     }

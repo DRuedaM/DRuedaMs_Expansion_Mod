@@ -23,6 +23,10 @@
   "item.druedams_expansion_mod.fluorite_axe": "Hacha de fluorita",
   "item.druedams_expansion_mod.fluorite_shovel": "Pala de fluorita",
   "item.druedams_expansion_mod.fluorite_hoe": "Azada de fluorita",
+  "item.druedams_expansion_mod.fluorite_helmet": "Casco de fluorita",
+  "item.druedams_expansion_mod.fluorite_chestplate": "Pechera de fluorita",
+  "item.druedams_expansion_mod.fluorite_leggings": "Pantalones de fluorita",
+  "item.druedams_expansion_mod.fluorite_boots": "Botas de fluorita",
   "entity.minecraft.villager.druedams_expansion_mod.michael_jackson": "Michael Jackson",
   "painting.druedams_expansion_mod.mouse.title": "Mouse",
   "painting.druedams_expansion_mod.mouse.author": "Stuart Little",
@@ -36,6 +40,10 @@
   "painting.druedams_expansion_mod.spain_flag.author": "España",
   "painting.druedams_expansion_mod.brocoli.title": "Brocoli",
   "painting.druedams_expansion_mod.brocoli.author": "Internet",
+  "painting.druedams_expansion_mod.michael_jackson.title": "Michael Jackson",
+  "painting.druedams_expansion_mod.michael_jackson.author": "Michael Jackson",
+  "painting.druedams_expansion_mod.among_us.title": "Among us",
+  "painting.druedams_expansion_mod.among_us.author": "Innersloth",
 
 
   "creativetab.expansion_tab": "DRuedaM's Expansion Mod"

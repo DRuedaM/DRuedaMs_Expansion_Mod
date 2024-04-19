@@ -49,6 +49,11 @@ public class ModItemModelProvider extends ItemModelProvider
         simpleItem(ModItems.FLUORITE_HOE);
         simpleItem(ModItems.FLUORITE_SHOVEL);
 
+        simpleItem(ModItems.FLUORITE_HELMET);
+        simpleItem(ModItems.FLUORITE_CHESTPLATE);
+        simpleItem(ModItems.FLUORITE_LEGGINGS);
+        simpleItem(ModItems.FLUORITE_BOOTS);
+
 
     }
 

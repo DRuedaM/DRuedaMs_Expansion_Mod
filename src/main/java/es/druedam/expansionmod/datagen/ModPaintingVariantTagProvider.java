@@ -26,6 +26,8 @@ public class ModPaintingVariantTagProvider extends PaintingVariantTagsProvider
                 .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "ultrakill"))
                 .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "rodrick"))
                 .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "spain_flag"))
-                .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "brocoli"));
+                .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "brocoli"))
+                .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "michael_jackson"))
+                .addOptional(new ResourceLocation(ExpansionModMain.MOD_ID, "among_us"));
     }
 }

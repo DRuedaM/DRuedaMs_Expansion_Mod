@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": {
+      "item": "druedams_expansion_mod:fluorite_ingot"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "F F",
+    "F F"
+  ],
+  "result": {
+    "item": "druedams_expansion_mod:fluorite_leggings"
+  },
+  "show_notification": true
+}

@@ -24,21 +24,19 @@ public class ModEvents
         if (event.getType() == VillagerProfession.FARMER) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
-            //LEVEL 1
+            //These are the trades for the farmer villager
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.GOLD_INGOT, 1),
-                    new ItemStack(ModItems.TOMATO_SEEDS.get(), 12),
+                    new ItemStack(ModItems.STRAWBERRY.get(), 3),
                     10, 8, 0.02f
             ));
 
-            //LEVEL 2
-            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.GOLD_INGOT, 1),
-                    new ItemStack(ModItems.STRAWBERRY.get(), 12),
+                    new ItemStack(ModItems.TOMATO.get(), 3),
                     10, 16, 0.035f
             ));
 
-            //LEVEL 3
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.GOLD_INGOT, 1),
                     new ItemStack(ModItems.CHEESE.get(), 3),
@@ -50,7 +48,7 @@ public class ModEvents
         if (event.getType() == ModVillagers.MICHAEL_JACKSON.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
-            //LEVEL 1
+            //These are the trades for michael jackson, containing all the music discs of the game
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.GOLD_INGOT, 3),
                     new ItemStack(Items.MUSIC_DISC_13, 1),
@@ -142,15 +140,11 @@ public class ModEvents
                     3, 150, 0.02f
             ));
 
-
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.GOLD_INGOT, 20),
                     new ItemStack(Items.MUSIC_DISC_OTHERSIDE, 1),
                     3, 200, 0.02f
             ));
-
         }
-
-
     }
 }

@@ -86,10 +86,22 @@ public class ModItems
             () -> new PickaxeItem(ModToolTiers.FLUORITE, 2,-3f,new Item.Properties()));
 
     public static final RegistryObject<Item> FLUORITE_AXE = ITEMS.register("fluorite_axe",
-            () -> new AxeItem(ModToolTiers.FLUORITE, 3,-2.5f ,new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.FLUORITE, 3.5f,-2.5f ,new Item.Properties()));
 
     public static final RegistryObject<Item> FLUORITE_HOE = ITEMS.register("fluorite_hoe",
             () -> new HoeItem(ModToolTiers.FLUORITE, 1,-2.5f ,new Item.Properties()));
+
+    public static final RegistryObject<Item> FLUORITE_HELMET = ITEMS.register("fluorite_helmet",
+            () -> new ArmorItem(ModArmorMaterials.FLUORITE, ArmorItem.Type.HELMET ,new Item.Properties()));
+
+    public static final RegistryObject<Item> FLUORITE_CHESTPLATE = ITEMS.register("fluorite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.FLUORITE, ArmorItem.Type.CHESTPLATE ,new Item.Properties()));
+
+    public static final RegistryObject<Item> FLUORITE_LEGGINGS = ITEMS.register("fluorite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.FLUORITE, ArmorItem.Type.LEGGINGS ,new Item.Properties()));
+
+    public static final RegistryObject<Item> FLUORITE_BOOTS = ITEMS.register("fluorite_boots",
+            () -> new ArmorItem(ModArmorMaterials.FLUORITE, ArmorItem.Type.BOOTS ,new Item.Properties()));
 
 
     //Metodo para registrar en el bus principal del juego todos los items de la clase

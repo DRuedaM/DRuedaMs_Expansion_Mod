@@ -52,6 +52,11 @@ public class CreativeModeTabs
                         output.accept(ModItems.FLUORITE_SHOVEL.get());
                         output.accept(ModItems.FLUORITE_PICKAXE.get());
                         output.accept(ModItems.FLUORITE_HOE.get());
+
+                        output.accept(ModItems.FLUORITE_HELMET.get());
+                        output.accept(ModItems.FLUORITE_CHESTPLATE.get());
+                        output.accept(ModItems.FLUORITE_LEGGINGS.get());
+                        output.accept(ModItems.FLUORITE_BOOTS.get());
                     }).build());
 
 

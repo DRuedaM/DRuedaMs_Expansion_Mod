@@ -6,6 +6,7 @@ import es.druedam.expansionmod.item.CreativeModeTabs;
 import es.druedam.expansionmod.item.ModItems;
 import es.druedam.expansionmod.loot.ModLootModifiers;
 import es.druedam.expansionmod.painting.ModPaintings;
+import es.druedam.expansionmod.sound.ModSounds;
 import es.druedam.expansionmod.villager.ModVillagers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -43,7 +44,7 @@ public class ExpansionModMain
         ModLootModifiers.register(modEventBus);
         ModVillagers.register(modEventBus);
         ModPaintings.register(modEventBus);
-
+        ModSounds.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

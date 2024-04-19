@@ -3,7 +3,7 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:chests/village_weaponsmith"
+      "loot_table_id": "minecraft:chests/village/village_cartographer"
     }
   ],
   "item": "druedams_expansion_mod:raw_fried_chicken"
