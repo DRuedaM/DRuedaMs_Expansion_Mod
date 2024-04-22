@@ -43,11 +43,11 @@ public class ModItemModelProvider extends ItemModelProvider
         simpleItem(ModItems.STRAWBERRY_SEEDS);
         simpleItem(ModItems.FLUORITE_INGOT);
 
-        simpleItem(ModItems.FLUORITE_PICKAXE);
-        simpleItem(ModItems.FLUORITE_AXE);
-        simpleItem(ModItems.FLUORITE_SWORD);
-        simpleItem(ModItems.FLUORITE_HOE);
-        simpleItem(ModItems.FLUORITE_SHOVEL);
+        handheldItem(ModItems.FLUORITE_PICKAXE);
+        handheldItem(ModItems.FLUORITE_AXE);
+        handheldItem(ModItems.FLUORITE_SWORD);
+        handheldItem(ModItems.FLUORITE_HOE);
+        handheldItem(ModItems.FLUORITE_SHOVEL);
 
         simpleItem(ModItems.FLUORITE_HELMET);
         simpleItem(ModItems.FLUORITE_CHESTPLATE);

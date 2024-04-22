@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "druedams_expansion_mod:block/deepslate_fluorite"
+  }
+}

@@ -28,16 +28,15 @@ public class ModPlacedFeatures
 
         register(context, FLUORITE_ORE_PLACED_SEVEN_KEY, configuredFeatures.getOrThrow(ModConfiguresFeatures.OVERWORLD_FLUORITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(7
-                        , HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-50), VerticalAnchor.aboveBottom(80))));
+                        , HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-30), VerticalAnchor.aboveBottom(80))));
 
-        register(context, FLUORITE_ORE_PLACED_FIVE_KEY, configuredFeatures.getOrThrow(ModConfiguresFeatures.OVERWORLD_FLUORITE_ORE_KEY),
+        register(context, FLUORITE_ORE_PLACED_FIVE_KEY, configuredFeatures.getOrThrow(ModConfiguresFeatures.OVERWORLD_DEEPSLATE_FLUORITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(5
-                        , HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-50), VerticalAnchor.aboveBottom(80))));
+                        , HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-50), VerticalAnchor.aboveBottom(80))));
 
-        register(context, FLUORITE_ORE_PLACED_TWO_KEY, configuredFeatures.getOrThrow(ModConfiguresFeatures.OVERWORLD_FLUORITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(2,
+        register(context, FLUORITE_ORE_PLACED_TWO_KEY, configuredFeatures.getOrThrow(ModConfiguresFeatures.OVERWORLD_DEEPSLATE_FLUORITE_ORE_KEY),
+                ModOrePlacement.rareOrePlacement(2,
                         HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-50), VerticalAnchor.aboveBottom(80))));
-
 
     }
 

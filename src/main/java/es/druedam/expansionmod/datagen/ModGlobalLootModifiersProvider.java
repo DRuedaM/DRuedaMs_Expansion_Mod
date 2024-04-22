@@ -31,13 +31,13 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider
         //Hacemos que aparezcan semillas de tomate de la hierba cuando sea destruida con una probabilidad de 35%
         add("tomato_seeds_from_grass", new AddItemModifier(new LootItemCondition[] {
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS).build(),
-                LootItemRandomChanceCondition.randomChance(0.15f).build()
+                LootItemRandomChanceCondition.randomChance(0.10f).build()
         }, ModItems.TOMATO_SEEDS.get()));
 
         //Hacemos que aparezcan semilllas de fresa de la hierba cuando sea destruida con una probabilidad de 35%
         add("strawberry_seeds_from_grass", new AddItemModifier(new LootItemCondition[] {
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS).build(),
-                LootItemRandomChanceCondition.randomChance(0.15f).build()
+                LootItemRandomChanceCondition.randomChance(0.10f).build()
         },ModItems.STRAWBERRY_SEEDS.get()));
 
         add("pepsi_from_zombie", new AddItemModifier(new LootItemCondition[]{
@@ -45,21 +45,36 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider
                 LootItemRandomChanceCondition.randomChance(0.25f).build()
         }, ModItems.PEPSI.get()));
 
-        add("tomato_seeds_from_village_mason", new AddItemModifier(new LootItemCondition[]{
-                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_cartographer")).build()
-        }, ModItems.TOMATO_SEEDS.get()));
+        add("fluorite_sword_from_village_weaponsmith", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_weaponsmith")).build(),
+                LootItemRandomChanceCondition.randomChance(0.35f).build(),
 
-        add("raw_fried_chicken_from_village_butcher", new AddItemModifier(new LootItemCondition[]{
-                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_cartographer")).build()
-        }, ModItems.RAW_FRIED_CHICKEN.get()));
+        }, ModItems.FLUORITE_SWORD.get()));
 
-        add("raw_fried_chicken_from_village_weaponsmith", new AddItemModifier(new LootItemCondition[]{
-                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_cartographer")).build()
-        }, ModItems.RAW_FRIED_CHICKEN.get()));
+        add("fluorite_pickaxe_from_village_toolssmith", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_toolsmith")).build(),
+                LootItemRandomChanceCondition.randomChance(0.35f).build(),
 
-        add("raw_fried_chicken_from_village_armorer", new AddItemModifier(new LootItemCondition[]{
-                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_cartographer")).build()
-        }, ModItems.RAW_FRIED_CHICKEN.get()));
+        }, ModItems.FLUORITE_PICKAXE.get()));
+
+        add("fluorite_axe_from_village_toolssmith", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_toolsmith")).build(),
+                LootItemRandomChanceCondition.randomChance(0.25f).build(),
+
+        }, ModItems.FLUORITE_AXE.get()));
+
+        add("fluorite_hoe_from_village_toolssmith", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_toolsmith")).build(),
+                LootItemRandomChanceCondition.randomChance(0.35f).build(),
+
+        }, ModItems.FLUORITE_HOE.get()));
+
+        add("fluorite_shovel_from_village_toolssmith", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_toolsmith")).build(),
+                LootItemRandomChanceCondition.randomChance(0.45f).build(),
+
+        }, ModItems.FLUORITE_SHOVEL.get()));
+
 
     }
 

@@ -46,7 +46,7 @@ public class ModBlockLootTables extends BlockLootSubProvider
                                         .when(lootitemcondition$builder)
                                         .add(LootItem.lootTableItem(ModItems.TOMATO.get())
                                                 .apply(ApplyBonusCount
-                                                        .addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2))))));
+                                                        .addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 1))))));
 
 
         //Condition to crop strawberry drop the tomatoes
@@ -62,12 +62,15 @@ public class ModBlockLootTables extends BlockLootSubProvider
                                         .when(lootitemcondition$builder_strawberry)
                                         .add(LootItem.lootTableItem(ModItems.STRAWBERRY.get())
                                                 .apply(ApplyBonusCount
-                                                        .addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 3))))));
+                                                        .addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2))))));
 
 
         //Conditions to drop one or more minerals of fluorite
         this.add(ModBlocks.ORE_FLUORITE.get(),
-                block -> createOreDrop(ModBlocks.ORE_FLUORITE.get(), ModItems.FLUORITE_INGOT.get()).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F))));
+                block -> createOreDrop(ModBlocks.ORE_FLUORITE.get(), ModItems.FLUORITE_INGOT.get()).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))));
+
+        this.add(ModBlocks.DEEPSLATE_FLUORITE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_FLUORITE.get(), ModItems.FLUORITE_INGOT.get()).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))));
     }
 
     @Override

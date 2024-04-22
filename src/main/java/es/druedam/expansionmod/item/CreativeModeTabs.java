@@ -45,6 +45,7 @@ public class CreativeModeTabs
                         output.accept(ModItems.STRAWBERRY_SEEDS.get());
                         output.accept(ModItems.TOMATO_SEEDS.get());
                         output.accept(ModBlocks.ORE_FLUORITE.get());
+                        output.accept(ModBlocks.DEEPSLATE_FLUORITE.get());
                         output.accept(ModItems.FLUORITE_INGOT.get());
 
                         output.accept(ModItems.FLUORITE_SWORD.get());

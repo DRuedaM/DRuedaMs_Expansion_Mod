@@ -10,26 +10,8 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "block": "druedams_expansion_mod:tomato_crop",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "age": "4"
-                  }
-                }
-              ],
-              "name": "druedams_expansion_mod:tomato"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "druedams_expansion_mod:tomato_seeds"
-            }
-          ]
+          "type": "minecraft:item",
+          "name": "druedams_expansion_mod:tomato"
         }
       ],
       "rolls": 1.0
@@ -54,12 +36,12 @@
               "formula": "minecraft:binomial_with_bonus_count",
               "function": "minecraft:apply_bonus",
               "parameters": {
-                "extra": 3,
+                "extra": 1,
                 "probability": 0.5714286
               }
             }
           ],
-          "name": "druedams_expansion_mod:tomato_seeds"
+          "name": "druedams_expansion_mod:tomato"
         }
       ],
       "rolls": 1.0

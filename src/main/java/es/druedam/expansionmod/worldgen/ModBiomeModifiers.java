@@ -38,7 +38,6 @@ public class ModBiomeModifiers
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FLUORITE_ORE_PLACED_TWO_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
-
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name)

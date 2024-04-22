@@ -19,6 +19,7 @@ import java.util.List;
 public class ModConfiguresFeatures
 {
     public static final ResourceKey<ConfiguredFeature<?,?>> OVERWORLD_FLUORITE_ORE_KEY = registerKey("flurite_ore_key");
+    public static final ResourceKey<ConfiguredFeature<?,?>> OVERWORLD_DEEPSLATE_FLUORITE_ORE_KEY = registerKey("deepslate_flurite_ore_key");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context)
     {
@@ -26,7 +27,12 @@ public class ModConfiguresFeatures
         List<OreConfiguration.TargetBlockState> overworldFluoriteOres = List.of(OreConfiguration.target(stoneReplaceables,
                 ModBlocks.ORE_FLUORITE.get().defaultBlockState()));
 
+        RuleTest deepSlateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+        List<OreConfiguration.TargetBlockState> overworldFluoriteOres2 = List.of(OreConfiguration.target(deepSlateReplaceables,
+                ModBlocks.DEEPSLATE_FLUORITE.get().defaultBlockState()));
+
         register(context, OVERWORLD_FLUORITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFluoriteOres, 9));
+        register(context, OVERWORLD_DEEPSLATE_FLUORITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFluoriteOres2, 9));
     }
 
 

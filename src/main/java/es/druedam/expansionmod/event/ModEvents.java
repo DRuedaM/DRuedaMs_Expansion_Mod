@@ -37,7 +37,7 @@ public class ModEvents
                     10, 16, 0.035f
             ));
 
-            trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.GOLD_INGOT, 1),
                     new ItemStack(ModItems.CHEESE.get(), 3),
                     10, 16, 0.035f

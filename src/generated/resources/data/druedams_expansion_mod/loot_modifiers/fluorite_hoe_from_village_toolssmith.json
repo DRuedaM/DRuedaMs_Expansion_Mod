@@ -1,0 +1,14 @@
+{
+  "type": "druedams_expansion_mod:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_toolsmith"
+    },
+    {
+      "chance": 0.15,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "druedams_expansion_mod:fluorite_hoe"
+}

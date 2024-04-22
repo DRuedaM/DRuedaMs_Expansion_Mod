@@ -57,6 +57,7 @@ public class ModBlockStateProvider extends BlockStateProvider
         makeTomatoCrop((CropBlock) ModBlocks.TOMATO_CROP.get(), "tomato_stage", "tomato_stage");
         makeStrawberryCrop((CropBlock) ModBlocks.STRAWBERRY_CROP.get(), "strawberry_stage", "strawberry_stage");
         blockWithItem(ModBlocks.ORE_FLUORITE);
+        blockWithItem(ModBlocks.DEEPSLATE_FLUORITE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject)

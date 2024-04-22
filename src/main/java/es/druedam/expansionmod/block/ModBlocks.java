@@ -31,6 +31,9 @@ public class ModBlocks
     public static final RegistryObject<Block> ORE_FLUORITE = registerBlock("ore_fluorite",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE), UniformInt.of(2,5)));
 
+    public static final RegistryObject<Block> DEEPSLATE_FLUORITE = registerBlock("deepslate_fluorite",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE), UniformInt.of(3,7)));
+
     public static final RegistryObject<Block> PIZZA = registerBlock("pizza",
             () -> new PizzaBlock(BlockBehaviour.Properties.copy(Blocks.CAKE).noLootTable()),1);
 
