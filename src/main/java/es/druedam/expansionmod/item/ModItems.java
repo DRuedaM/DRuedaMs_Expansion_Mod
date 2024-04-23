@@ -104,6 +104,19 @@ public class ModItems
             () -> new ArmorItem(ModArmorMaterials.FLUORITE, ArmorItem.Type.BOOTS ,new Item.Properties()));
 
 
+    public static final RegistryObject<Item> WOOD_HELMET = ITEMS.register("wood_helmet",
+            () -> new ArmorItem(ModArmorMaterials.WOOD, ArmorItem.Type.HELMET ,new Item.Properties()));
+
+    public static final RegistryObject<Item> WOOD_CHESTPLATE = ITEMS.register("wood_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.WOOD, ArmorItem.Type.CHESTPLATE ,new Item.Properties()));
+
+    public static final RegistryObject<Item> WOOD_LEGGINGS = ITEMS.register("wood_leggings",
+            () -> new ArmorItem(ModArmorMaterials.WOOD, ArmorItem.Type.LEGGINGS ,new Item.Properties()));
+
+    public static final RegistryObject<Item> WOOD_BOOTS = ITEMS.register("wood_boots",
+            () -> new ArmorItem(ModArmorMaterials.WOOD, ArmorItem.Type.BOOTS ,new Item.Properties()));
+
+
     //Metodo para registrar en el bus principal del juego todos los items de la clase
     public static void register(IEventBus eventBus)
     {

@@ -20,6 +20,15 @@ import net.minecraftforge.server.command.ConfigCommand;
 
 import java.util.List;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Esta clase registra todos los metodos que contengan
+ *     eventos que se encuentren dentro del juego, principalmente
+ *     estamos usandolo para crear tradeos nuevos de aldeanos en sus profesiones
+ * </p>
+ */
+
 @Mod.EventBusSubscriber(modid = ExpansionModMain.MOD_ID)
 public class ModEvents
 {

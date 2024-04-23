@@ -11,6 +11,13 @@ import net.minecraftforge.common.TierSortingRegistry;
 
 import java.util.List;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase que define tiers para el juego y lo registra
+ * </p>
+ * @see Tier
+ */
 public class ModToolTiers
 {
     public static final Tier FLUORITE = TierSortingRegistry.registerTier(

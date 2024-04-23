@@ -4,6 +4,7 @@ import es.druedam.expansionmod.ExpansionModMain;
 import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
@@ -19,7 +20,16 @@ public enum ModArmorMaterials implements ArmorMaterial {
         p_266654_.put(ArmorItem.Type.LEGGINGS, 5);
         p_266654_.put(ArmorItem.Type.CHESTPLATE, 8);
         p_266654_.put(ArmorItem.Type.HELMET, 2);
-    }), 9, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ModItems.FLUORITE_INGOT.get()));
+    }), 9, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ModItems.FLUORITE_INGOT.get())),
+
+    WOOD("wood", 8, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266654_) -> {
+        p_266654_.put(ArmorItem.Type.BOOTS, 2);
+        p_266654_.put(ArmorItem.Type.LEGGINGS, 3);
+        p_266654_.put(ArmorItem.Type.CHESTPLATE, 4);
+        p_266654_.put(ArmorItem.Type.HELMET, 2);
+    }), 9, SoundEvents.ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> Ingredient.of(ItemTags.PLANKS));
+
+
 
     public static final StringRepresentable.EnumCodec<net.minecraft.world.item.ArmorMaterials> CODEC = StringRepresentable.fromEnum(net.minecraft.world.item.ArmorMaterials::values);
     private static final EnumMap<ArmorItem.Type, Integer> HEALTH_FUNCTION_FOR_TYPE = Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266653_) -> {

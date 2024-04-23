@@ -7,6 +7,13 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase que registra nuevos cuadros al juego
+ * </p>
+ * @see ModPaintings#register(IEventBus) 
+ */
 public class ModPaintings
 {
     public static final DeferredRegister<PaintingVariant> PAINTING_VARIANTS =

@@ -58,6 +58,11 @@ public class ModItemModelProvider extends ItemModelProvider
         simpleItem(ModItems.FLUORITE_LEGGINGS);
         simpleItem(ModItems.FLUORITE_BOOTS);
 
+        simpleItem(ModItems.WOOD_HELMET);
+        simpleItem(ModItems.WOOD_CHESTPLATE);
+        simpleItem(ModItems.WOOD_LEGGINGS);
+        simpleItem(ModItems.WOOD_BOOTS);
+
 
     }
 

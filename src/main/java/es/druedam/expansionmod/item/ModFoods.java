@@ -24,7 +24,6 @@ public class ModFoods
      * el alimento
      * @see FoodProperties#FoodProperties(FoodProperties.Builder)
      */
-
     public static final FoodProperties FRIED_CHICKEN = new FoodProperties.Builder().nutrition(5).
             saturationMod(0.4f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED,
                             1000), 1f).meat().build();

@@ -24,10 +24,17 @@
   "item.druedams_expansion_mod.fluorite_axe": "Hacha de fluorita",
   "item.druedams_expansion_mod.fluorite_shovel": "Pala de fluorita",
   "item.druedams_expansion_mod.fluorite_hoe": "Azada de fluorita",
+
   "item.druedams_expansion_mod.fluorite_helmet": "Casco de fluorita",
   "item.druedams_expansion_mod.fluorite_chestplate": "Pechera de fluorita",
   "item.druedams_expansion_mod.fluorite_leggings": "Pantalones de fluorita",
   "item.druedams_expansion_mod.fluorite_boots": "Botas de fluorita",
+
+  "item.druedams_expansion_mod.wood_helmet": "Casco de madera",
+  "item.druedams_expansion_mod.wood_chestplate": "Pechera de madera",
+  "item.druedams_expansion_mod.wood_leggings": "Pantalones de madera",
+  "item.druedams_expansion_mod.wood_boots": "Botas de madera",
+
   "entity.minecraft.villager.druedams_expansion_mod.michael_jackson": "Michael Jackson",
   "painting.druedams_expansion_mod.mouse.title": "Mouse",
   "painting.druedams_expansion_mod.mouse.author": "Stuart Little",

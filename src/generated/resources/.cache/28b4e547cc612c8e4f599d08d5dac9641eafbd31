@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-22T11:13:04.674944	Item Models: druedams_expansion_mod
+// 1.20.1	2024-04-23T13:26:29.9089875	Item Models: druedams_expansion_mod
 7e97cdcc2117da9351806cd47e496f9260a9f6a2 assets/druedams_expansion_mod/models/item/burger.json
 b60f0c83fd15c29672c4504cc146541bc3bbc2e4 assets/druedams_expansion_mod/models/item/campurriana.json
 f776338cd8374477d4774ab74c0e458a49bfd661 assets/druedams_expansion_mod/models/item/cheese.json
@@ -25,3 +25,7 @@ e959e6eba7d90580c02ef6ed3b1f89972b52ed9b assets/druedams_expansion_mod/models/it
 91c2269c6a3568b90db33ff96006d4e41908addc assets/druedams_expansion_mod/models/item/strawberry_seeds.json
 3867729f2970ca678495885130e79dd45a0f5baf assets/druedams_expansion_mod/models/item/tomato.json
 88cc3956d877cc45b8a2738fd0840baa894ae65d assets/druedams_expansion_mod/models/item/tomato_seeds.json
+13d2c275e13ed7b26c37bb4b12b05fda219fbdbe assets/druedams_expansion_mod/models/item/wood_boots.json
+7b38d3bc9e553421d1ac88e574f369df00852bce assets/druedams_expansion_mod/models/item/wood_chestplate.json
+a496a0898a142ae5320cf2c00cc203a6332127fc assets/druedams_expansion_mod/models/item/wood_helmet.json
+f6cb11ec13b53b20249ac3bf2fa4c5670942020c assets/druedams_expansion_mod/models/item/wood_leggings.json

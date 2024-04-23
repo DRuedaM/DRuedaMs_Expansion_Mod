@@ -3,8 +3,10 @@ package es.druedam.expansionmod.datagen;
 import es.druedam.expansionmod.ExpansionModMain;
 import es.druedam.expansionmod.block.ModBlocks;
 import es.druedam.expansionmod.item.ModItems;
+import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -199,6 +201,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.FLUORITE_INGOT.get()), has(ModItems.FLUORITE_INGOT.get()))
                 .save(pWriter);
 
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.WOOD_HELMET.get())
+                .pattern("WWW")
+                .pattern("W W")
+                .define('W', ItemTags.PLANKS)
+                .unlockedBy("has_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ItemTags.PLANKS).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.WOOD_CHESTPLATE.get())
+                .pattern("W W")
+                .pattern("WWW")
+                .pattern("WWW")
+                .define('W', ItemTags.PLANKS)
+                .unlockedBy("has_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ItemTags.PLANKS).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.WOOD_LEGGINGS.get())
+                .pattern("WWW")
+                .pattern("W W")
+                .pattern("W W")
+                .define('W', ItemTags.PLANKS)
+                .unlockedBy("has_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ItemTags.PLANKS).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.WOOD_BOOTS.get())
+                .pattern("W W")
+                .pattern("W W")
+                .define('W', ItemTags.PLANKS)
+                .unlockedBy("has_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ItemTags.PLANKS).build()))
+                .save(pWriter);
 
         oreCooking(pWriter, RecipeSerializer.SMELTING_RECIPE, List.of(ModItems.RAW_FRIED_CHICKEN.get()), RecipeCategory.FOOD, ModItems.FRIED_CHICKEN.get(), 0.2f, 200, "","");
     }

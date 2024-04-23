@@ -62,6 +62,11 @@ public class CreativeModeTabs
                         output.accept(ModItems.FLUORITE_CHESTPLATE.get());
                         output.accept(ModItems.FLUORITE_LEGGINGS.get());
                         output.accept(ModItems.FLUORITE_BOOTS.get());
+
+                        output.accept(ModItems.WOOD_HELMET.get());
+                        output.accept(ModItems.WOOD_CHESTPLATE.get());
+                        output.accept(ModItems.WOOD_LEGGINGS.get());
+                        output.accept(ModItems.WOOD_BOOTS.get());
                     }).build());
 
 
