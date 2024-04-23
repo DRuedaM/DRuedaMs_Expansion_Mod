@@ -6,9 +6,9 @@
       "loot_table_id": "minecraft:chests/village/village_toolsmith"
     },
     {
-      "chance": 0.15,
+      "chance": 0.45,
       "condition": "minecraft:random_chance"
     }
   ],
-  "item": "druedams_expansion_mod:fluorite_hoe"
+  "item": "druedams_expansion_mod:fluorite_shovel"
 }

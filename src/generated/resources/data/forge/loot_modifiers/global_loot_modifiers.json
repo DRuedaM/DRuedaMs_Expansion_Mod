@@ -1,12 +1,12 @@
 {
   "entries": [
-    "druedams_expansion_mod:fluorite_pickaxe_from_village_toolssmith",
+    "druedams_expansion_mod:fluorite_shovel_from_village_toolsmith",
     "druedams_expansion_mod:strawberry_seeds_from_grass",
+    "druedams_expansion_mod:fluorite_axe_from_village_toolsmith",
     "druedams_expansion_mod:fluorite_sword_from_village_weaponsmith",
-    "druedams_expansion_mod:fluorite_axe_from_village_toolssmith",
+    "druedams_expansion_mod:fluorite_hoe_from_village_toolsmith",
+    "druedams_expansion_mod:fluorite_pickaxe_from_village_toolsmith",
     "druedams_expansion_mod:pepsi_from_zombie",
-    "druedams_expansion_mod:fluorite_hoe_from_village_toolssmith",
-    "druedams_expansion_mod:fluorite_shovel_from_village_toolssmith",
     "druedams_expansion_mod:tomato_seeds_from_grass"
   ],
   "replace": false

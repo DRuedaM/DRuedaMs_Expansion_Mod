@@ -3,13 +3,28 @@ package es.druedam.expansionmod.item;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 /**
- * Clase para crear las propiedades de comida de cada item
+ * @author David Rueda.
+ * <p>
+ *   En esta clase se registran los items que van a funcionar como comidas
+ *  dentro del juego, aqui no existe un metodo register, debido a que solo
+ *  se crean las instancias del objeto comida para agregarle sus debidas propiedades
+ *  en la clase ModItems
+ * </p>
+ * @see ModItems#register(IEventBus)
  */
 public class ModFoods
 {
-    //Class for creating food and his respective properties
+
+    /**
+     * El constructor para el alimento necesita como parametros la nutricion del alimento
+     * la saturacion y si queremos que el alimento agregue algun efecto a nuestro jugador al comer
+     * el alimento
+     * @see FoodProperties#FoodProperties(FoodProperties.Builder)
+     */
+
     public static final FoodProperties FRIED_CHICKEN = new FoodProperties.Builder().nutrition(5).
             saturationMod(0.4f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED,
                             1000), 1f).meat().build();
@@ -29,7 +44,7 @@ public class ModFoods
             saturationMod(0.4f).meat().fast().build();
 
     public static final FoodProperties STRAWBERRY = new FoodProperties.Builder().nutrition(2).
-            saturationMod(0.1f).fast().effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 500), 0.2f).alwaysEat().build();
+            saturationMod(0.1f).fast().effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 500), 1f).alwaysEat().build();
 
     public static final FoodProperties CHEESE = new FoodProperties.Builder().nutrition(2).
             saturationMod(0.5f).build();
@@ -55,7 +70,4 @@ public class ModFoods
 
     public static final FoodProperties FOOD_COMBINED = new FoodProperties.Builder().nutrition(8).
             saturationMod(0.5f).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3500), 1).build();
-
-
-
 }

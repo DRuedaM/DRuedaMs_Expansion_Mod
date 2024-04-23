@@ -11,8 +11,12 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
 /**
- * Clase donde agregamos los items que queremos
- * generar json de forma automatica con el datagen
+ * @author David Rueda
+ * <p>
+ *     Esta clase es la encargada de registrar
+ *     los items para su posterior generacion de ficheros JSON
+ * </p>
+ * @see DataGenerators
  */
 public class ModItemModelProvider extends ItemModelProvider
 {
@@ -57,6 +61,14 @@ public class ModItemModelProvider extends ItemModelProvider
 
     }
 
+    /**
+     * <p>
+     *     Funcion que registra items comunes con la estructura de JSON
+     *     necesaria
+     * </p>
+     * @param item
+     * @return ItemModelBuilder
+     */
     private ItemModelBuilder simpleItem(RegistryObject<Item> item)
     {
         return withExistingParent(item.getId().getPath(),
@@ -64,6 +76,14 @@ public class ModItemModelProvider extends ItemModelProvider
                 new ResourceLocation(ExpansionModMain.MOD_ID, "item/" + item.getId().getPath()));
     }
 
+    /**
+     * <p>
+     *     Funcion que registra items handheld (herramientas) con las estrucutra de JSON
+     *     necesaria
+     * </p>
+     * @param item
+     * @return ItemModelBuilder
+     */
     private ItemModelBuilder handheldItem(RegistryObject<Item> item)
     {
         return withExistingParent(item.getId().getPath(),

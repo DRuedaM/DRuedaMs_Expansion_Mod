@@ -10,14 +10,16 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 /**
- * Esta clase crea un item especial,
- * hereda directamente de la clase tarta de minecraft
- * un objeto que en vez de comer directamente de la mano
- * se pone en el suelo y varios pueden comer de ahi
- * lo primero que hacemos es cambiar las dimensiones para dar
- * un aspecto de pizza y hacer la masa fina y sobreescribir
- * los getters para que lea el nuevo valor
- * Para crear las fases de la pizza siendo comida se crean varios json
+ * @author David Rueda
+ * <p>
+ *     La clase Pizza block funciona igual que una tarta de minecraft.
+ *     la tarta de minecraft es un tipo de comida que puede ser colocado
+ *     como parte de un bloque del mundo, en el cual todos los jugadores pueden
+ *     comer de ella y alimentarse. El funcionamiento de la pizza es el mismo,
+ *     lo unico que es modificado es su textura y su tamaño, al heredar de CakeBlock
+ *     su comportamiento es el mismo.
+ * </p>
+ * @see CakeBlock
  */
 public class PizzaBlock extends CakeBlock
 {

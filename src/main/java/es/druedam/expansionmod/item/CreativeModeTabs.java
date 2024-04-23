@@ -11,18 +11,22 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 /**
- * Esta clase solo agrega los items del mod
- * a una nueva pestana del modo creativo donde encontrar
- * de forma especifia los items de este mod
+ * @author David Rueda
+ * <p>
+ *     Esta clase sirve para almacenar
+ *     los items que queramos en una pestaña distinta
+ *     a las del juego base para mostrar al jugador
+ *     los objetos nuevos que se encuentran en el mod, y
+ *     asi poder acceder a ellos mas facilmente
+ * </p>
  */
 public class CreativeModeTabs
 {
 
-    //Creamos la variable para registrar los elementos en el modo creativo en una ventana aparte
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
         DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ExpansionModMain.MOD_ID);
 
-    //En esta variable se define que en el modo creativo aparezca una ventana con los items del mod especificos
+
     public static final RegistryObject<CreativeModeTab> EXPANSION_TAB = CREATIVE_MODE_TABS.register("expansion_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.DURUM.get()))
                     .title(Component.translatable("creativetab.expansion_tab")).displayItems((itemDisplayParameters, output) ->
@@ -61,7 +65,6 @@ public class CreativeModeTabs
                     }).build());
 
 
-    //Metodo para registrar la ventana del mod en el modo creativo del juego
     public static void register(IEventBus eventBus)
     {
         CREATIVE_MODE_TABS.register(eventBus);

@@ -21,6 +21,15 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Esta clase indica las condiciones
+ *     para que los bloques que queramos que dropeen
+ *     algo cuando sean destruidos
+ * </p>
+ * @see BlockLootSubProvider
+ */
 public class ModBlockLootTables extends BlockLootSubProvider
 {
 
@@ -29,11 +38,10 @@ public class ModBlockLootTables extends BlockLootSubProvider
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
 
-    //In this method we create the conditions to specific blocks to drop the things that we want
     @Override
     protected void generate()
     {
-        //Condition to crop tomato drop the tomatoes
+
         LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.TOMATO_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TomatoCropBlock.AGE, 4));
@@ -49,7 +57,6 @@ public class ModBlockLootTables extends BlockLootSubProvider
                                                         .addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 1))))));
 
 
-        //Condition to crop strawberry drop the tomatoes
         LootItemCondition.Builder lootitemcondition$builder_strawberry = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.STRAWBERRY_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StrawberryCropBlock.AGE, 7));
@@ -65,7 +72,6 @@ public class ModBlockLootTables extends BlockLootSubProvider
                                                         .addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2))))));
 
 
-        //Conditions to drop one or more minerals of fluorite
         this.add(ModBlocks.ORE_FLUORITE.get(),
                 block -> createOreDrop(ModBlocks.ORE_FLUORITE.get(), ModItems.FLUORITE_INGOT.get()).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))));
 

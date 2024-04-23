@@ -9,8 +9,15 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
 /**
- * Clase que hereda de bloque de culitvo
- * para crear uno de tomate
+ * @author David Rueda
+ * <p>
+ *      Esta clase crea un nuevo tipo de cultivo con parametros
+ *      modificados, en este caso hacemos que tenga una edad elegida por
+ *      nosotros, y al registrarlo en la clase ModBlocks, lo definimos como cultivo
+ * </p>
+ * @see StrawberryCropBlock
+ * @see CropBlock
+ * @see es.druedam.expansionmod.block.ModBlocks
  */
 public class TomatoCropBlock extends CropBlock
 {

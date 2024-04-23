@@ -11,6 +11,14 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase que registra los items de cuadros para la
+ *     generacion de su fichero json
+ * </p>
+ * @see DataGenerators
+ */
 public class ModPaintingVariantTagProvider extends PaintingVariantTagsProvider
 {
 

@@ -1,6 +1,8 @@
 package es.druedam.expansionmod.event;
 
 import es.druedam.expansionmod.ExpansionModMain;
+import es.druedam.expansionmod.command.ReturnHomeCommand;
+import es.druedam.expansionmod.command.SetHomeCommand;
 import es.druedam.expansionmod.item.ModItems;
 import es.druedam.expansionmod.villager.ModVillagers;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
@@ -9,9 +11,12 @@ import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraftforge.event.RegisterCommandsEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.server.command.ConfigCommand;
 
 import java.util.List;
 
@@ -146,5 +151,22 @@ public class ModEvents
                     3, 200, 0.02f
             ));
         }
+    }
+
+    @SubscribeEvent
+    public static void onCommandsRegister(RegisterCommandsEvent event)
+    {
+        new SetHomeCommand(event.getDispatcher());
+        new ReturnHomeCommand(event.getDispatcher());
+
+        ConfigCommand.register(event.getDispatcher());
+    }
+
+    @SubscribeEvent
+    public static void onPlayerCloned(PlayerEvent.Clone event)
+    {
+        event.getEntity().getPersistentData()
+                        .putIntArray("expansionmod.homepos", event.getOriginal().getPersistentData()
+                                .getIntArray("expansionmod.homepos"));
     }
 }
