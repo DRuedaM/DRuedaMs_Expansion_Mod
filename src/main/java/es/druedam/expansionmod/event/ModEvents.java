@@ -28,7 +28,6 @@ import java.util.List;
  *     estamos usandolo para crear tradeos nuevos de aldeanos en sus profesiones
  * </p>
  */
-
 @Mod.EventBusSubscriber(modid = ExpansionModMain.MOD_ID)
 public class ModEvents
 {

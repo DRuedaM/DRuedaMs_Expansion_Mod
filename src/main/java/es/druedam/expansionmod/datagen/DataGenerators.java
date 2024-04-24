@@ -12,8 +12,17 @@ import net.minecraftforge.fml.common.Mod;
 import java.util.concurrent.CompletableFuture;
 
 /**
- * Clase encargada de generar de forma automatica
- * los json de todos los items, crafteos, texturas y demás
+ * @author David Rueda
+ * <p>
+ *     Esta clase es una de las mas importantes de nuestro mod.
+ *     gran parte de lo que estamos haciendo necesita de
+ *     ficheros json para funcionar correctamente. lo que hace
+ *     esta clase es reunir todas las clases del paquete datagen
+ *     y a la hora de ejecutar un comando, automaticamente generar esos
+ *     json por nosotros con los datos ofrecidos por cada una de las clases
+ * </p>
+ * @see SubscribeEvent
+ * @see net.minecraftforge.fml.common.Mod.EventBusSubscriber
  */
 @Mod.EventBusSubscriber(modid = ExpansionModMain.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators

@@ -8,6 +8,16 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase que agrega un nuevo comando al juego
+ *     en este caso se encarga de recoger la ubicacion
+ *     del jugador actual, y la almacena permanentemente
+ *     para despues ser usada por ReturnHome
+ * </p>
+ * @see ReturnHomeCommand
+ */
 public class SetHomeCommand
 {
     public SetHomeCommand(CommandDispatcher<CommandSourceStack> dispatcher)

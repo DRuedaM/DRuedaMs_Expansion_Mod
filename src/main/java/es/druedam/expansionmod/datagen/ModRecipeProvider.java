@@ -68,14 +68,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.PORKCHOP), has(Items.PORKCHOP))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.PEPSI.get())
-                .pattern("ACZ")
-                .define('A', Items.GLASS_BOTTLE)
-                .define('C', Items.COAL)
-                .define('Z', Items.SUGAR)
-                .unlockedBy(getHasName(Items.GLASS_BOTTLE), has(Items.GLASS_BOTTLE))
-                .save(pWriter);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.CAMPURRIANA.get(), 8)
                 .pattern("HLT")
                 .define('H', Items.EGG)

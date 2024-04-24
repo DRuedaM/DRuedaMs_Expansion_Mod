@@ -25,7 +25,7 @@ public class ModItems
             DeferredRegister.create(ForgeRegistries.ITEMS, ExpansionModMain.MOD_ID);
 
     public static final RegistryObject<Item> FRIED_CHICKEN = ITEMS.register("fried_chicken",
-            () -> new Item(new Item.Properties().food(ModFoods.FRIED_CHICKEN)));
+            () -> new AppendTextItem(new Item.Properties().food(ModFoods.FRIED_CHICKEN), "tooltip.expansion.fried_chicken"));
 
     public static final RegistryObject<Item> RAW_FRIED_CHICKEN = ITEMS.register("raw_fried_chicken",
             () -> new Item(new Item.Properties().food(ModFoods.RAW_FRIED_CHICKEN)));
@@ -34,13 +34,13 @@ public class ModItems
             () -> new Item(new Item.Properties().food(ModFoods.PEPSI)));
 
     public static final RegistryObject<Item> CAMPURRIANA = ITEMS.register("campurriana",
-            () -> new Item(new Item.Properties().food(ModFoods.CAMPURRIANA)));
+            () -> new AppendTextItem(new Item.Properties().food(ModFoods.CAMPURRIANA), "tooltip.expansion.campurriana"));
 
     public static final RegistryObject<Item> CROQUETTE = ITEMS.register("croqueta",
             () -> new Item(new Item.Properties().food(ModFoods.CROQUETTE)));
 
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
-            () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
+            () -> new AppendTextItem(new Item.Properties().food(ModFoods.STRAWBERRY), "tooltip.expansion.strawberry"));
 
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
             () -> new Item(new Item.Properties().food(ModFoods.CHEESE)));
@@ -59,10 +59,10 @@ public class ModItems
             () -> new Item(new Item.Properties().food(ModFoods.TOMATO)));
 
     public static final RegistryObject<Item> DURUM = ITEMS.register("durum",
-            () -> new Item(new Item.Properties().food(ModFoods.DURUM)));
+            () -> new AppendTextItem(new Item.Properties().food(ModFoods.DURUM), "tooltip.expansion.durum"));
 
     public static final RegistryObject<Item> BURGER = ITEMS.register("burger",
-            () -> new Item(new Item.Properties().food(ModFoods.BURGER)));
+            () -> new AppendTextItem(new Item.Properties().food(ModFoods.BURGER), "tooltip.expansion.burger"));
 
     public static final RegistryObject<Item> FOOD_COMBINED = ITEMS.register("food_combined",
             () -> new Item(new Item.Properties().food(ModFoods.FOOD_COMBINED).stacksTo(1)));

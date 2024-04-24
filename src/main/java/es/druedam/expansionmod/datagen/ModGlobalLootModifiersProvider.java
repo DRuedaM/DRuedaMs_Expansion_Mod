@@ -58,7 +58,7 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider
 
         add("pepsi_from_zombie", new AddItemModifier(new LootItemCondition[]{
                 new LootTableIdCondition.Builder(new ResourceLocation("entities/zombie")).build(),
-                LootItemRandomChanceCondition.randomChance(0.25f).build()
+                LootItemRandomChanceCondition.randomChance(0.4f).build()
         }, ModItems.PEPSI.get()));
 
         add("fluorite_sword_from_village_weaponsmith", new AddItemModifier(new LootItemCondition[]{

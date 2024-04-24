@@ -22,10 +22,8 @@ import net.minecraftforge.registries.RegistryObject;
  */
 public class CreativeModeTabs
 {
-
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
         DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ExpansionModMain.MOD_ID);
-
 
     public static final RegistryObject<CreativeModeTab> EXPANSION_TAB = CREATIVE_MODE_TABS.register("expansion_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.DURUM.get()))

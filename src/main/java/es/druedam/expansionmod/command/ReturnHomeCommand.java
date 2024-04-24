@@ -7,6 +7,17 @@ import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase que agrega un nuevo comando al juego
+ *     en este caso se encarga de recoger la ubicacion
+ *     marcada por el jugador con el comando SetHome,
+ *     al recoger los datos el jugador es teletransportado
+ *     a esa misma posicion
+ * </p>
+ * @see SetHomeCommand
+ */
 public class ReturnHomeCommand
 {
     public ReturnHomeCommand(CommandDispatcher<CommandSourceStack> dispatcher)
