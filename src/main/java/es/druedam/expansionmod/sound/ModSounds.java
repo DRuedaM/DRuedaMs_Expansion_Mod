@@ -14,11 +14,9 @@ public class ModSounds
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, ExpansionModMain.MOD_ID);
 
     public static final RegistryObject<SoundEvent> MICHAEL_JACKSON_AMBIENT = registerSoundEvents("michael_jackson_ambient");
-    public static final RegistryObject<SoundEvent> MICHAEL_JACKSON_HURT = registerSoundEvents("michael_jackson_hurt");
-    public static final RegistryObject<SoundEvent> MICHAEL_JACKSON_DEATH = registerSoundEvents("michael_jackson_death");
-    public static final RegistryObject<SoundEvent> MICHAEL_JACKSON_CELEBRATE = registerSoundEvents("michael_jackson_celebrate");
-    public static final RegistryObject<SoundEvent> MICHAEL_JACKSON_NO = registerSoundEvents("michael_jackson_no");
-    public static final RegistryObject<SoundEvent> MICHAEL_JACKSON_YES = registerSoundEvents("michael_jackson_yes");
+
+
+
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name)
     {

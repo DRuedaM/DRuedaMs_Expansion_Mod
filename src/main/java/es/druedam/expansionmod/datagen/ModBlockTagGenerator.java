@@ -13,7 +13,6 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModBlockTagGenerator extends BlockTagsProvider
 {
-
     public ModBlockTagGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, ExpansionModMain.MOD_ID, existingFileHelper);
     }
@@ -21,7 +20,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider
     @Override
     protected void addTags(HolderLookup.Provider provider)
     {
-
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ORE_FLUORITE.get())
                 .add(ModBlocks.DEEPSLATE_FLUORITE.get());
@@ -30,6 +28,5 @@ public class ModBlockTagGenerator extends BlockTagsProvider
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ORE_FLUORITE.get())
                 .add(ModBlocks.DEEPSLATE_FLUORITE.get());
-
     }
 }

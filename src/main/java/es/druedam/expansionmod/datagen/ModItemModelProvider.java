@@ -20,7 +20,6 @@ import net.minecraftforge.registries.RegistryObject;
  */
 public class ModItemModelProvider extends ItemModelProvider
 {
-
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, ExpansionModMain.MOD_ID, existingFileHelper);
     }

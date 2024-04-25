@@ -11,7 +11,7 @@
   "terrain_adaptation": "beard_thin",
 
   // Maximum distance away from center that pieces can spawn. Cannot be greater than 128
-  "max_distance_from_center": 80,
+  "max_distance_from_center": 1,
 
   // The biome tag to use for what biomes that this structure can spawn in"
   "biomes": "#druedams_expansion_mod:has_structure/michael_jackson_home",
@@ -44,10 +44,10 @@
       "bounding_box": "full",
       "spawns": [
         {
-          "type": "minecraft:parrot",
-          "weight": 1,
+          "type": "minecraft:creeper",
+          "weight": 100,
           "minCount": 1,
-          "maxCount": 1
+          "maxCount": 3
         }
       ]
     }
