@@ -19,7 +19,6 @@ public class ModVillagers
     public static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS =
             DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, ExpansionModMain.MOD_ID);
 
-
     public static final RegistryObject<PoiType> MUSIC_MICHAEL = POI_TYPES.register("sound_poi",
             () -> new PoiType(ImmutableSet.copyOf(Blocks.NOTE_BLOCK.getStateDefinition().getPossibleStates()),
                     1, 1));

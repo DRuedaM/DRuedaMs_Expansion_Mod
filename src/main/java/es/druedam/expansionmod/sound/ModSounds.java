@@ -20,8 +20,6 @@ public class ModSounds
     public static final RegistryObject<SoundEvent> MICHAEL_JACKSON_NO = registerSoundEvents("michael_jackson_no");
     public static final RegistryObject<SoundEvent> MICHAEL_JACKSON_YES = registerSoundEvents("michael_jackson_yes");
 
-
-
     private static RegistryObject<SoundEvent> registerSoundEvents(String name)
     {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(ExpansionModMain.MOD_ID, name)));
