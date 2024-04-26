@@ -37,7 +37,7 @@ public class ModFoods
                     500), 0.1f).effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 500), 0.5f).alwaysEat().build();
 
     public static final FoodProperties CAMPURRIANA = new FoodProperties.Builder().nutrition(3).
-            saturationMod(0.2f).alwaysEat().fast().effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 150), 1).build();
+            saturationMod(0.2f).alwaysEat().fast().effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 700), 1).build();
 
     public static final FoodProperties CROQUETTE = new FoodProperties.Builder().nutrition(3).
             saturationMod(0.4f).meat().fast().build();

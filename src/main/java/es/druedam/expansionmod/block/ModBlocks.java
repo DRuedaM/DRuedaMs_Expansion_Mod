@@ -35,7 +35,7 @@ public class ModBlocks
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE), UniformInt.of(3,7)));
 
     public static final RegistryObject<Block> PIZZA = registerBlock("pizza",
-            () -> new PizzaBlock(BlockBehaviour.Properties.copy(Blocks.CAKE).noLootTable()),1);
+            () -> new PizzaBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).noLootTable()),1);
 
     public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
             () -> new TomatoCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().noOcclusion()));

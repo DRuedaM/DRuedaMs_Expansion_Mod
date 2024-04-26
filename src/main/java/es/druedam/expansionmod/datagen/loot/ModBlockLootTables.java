@@ -7,12 +7,10 @@ import es.druedam.expansionmod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -47,13 +45,20 @@ public class ModBlockLootTables extends BlockLootSubProvider
 
         this.add(ModBlocks.TOMATO_CROP.get(),
                 this.applyExplosionDecay(ModBlocks.TOMATO_CROP.get(),
-                        LootTable.lootTable().withPool(LootPool.lootPool()
-                                        .add(LootItem.lootTableItem(ModItems.TOMATO.get())))
+                        LootTable.lootTable()
+                                .withPool(LootPool.lootPool()
+                                        .add(LootItem.lootTableItem(ModItems.TOMATO_SEEDS.get())))
+                                .withPool(LootPool.lootPool()
+                                        .when(lootitemcondition$builder)
+                                        .add(LootItem.lootTableItem(ModItems.TOMATO_SEEDS.get())
+                                                .apply(SetItemCountFunction
+                                                        .setCount(UniformGenerator.between(1,2)))))
                                 .withPool(LootPool.lootPool()
                                         .when(lootitemcondition$builder)
                                         .add(LootItem.lootTableItem(ModItems.TOMATO.get())
-                                                .apply(ApplyBonusCount
-                                                        .addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 1))))));
+                                                .apply(SetItemCountFunction
+                                                        .setCount(UniformGenerator.between(2,3)))))));
+
 
 
         LootItemCondition.Builder lootitemcondition$builder_strawberry = LootItemBlockStatePropertyCondition
@@ -62,13 +67,19 @@ public class ModBlockLootTables extends BlockLootSubProvider
 
         this.add(ModBlocks.STRAWBERRY_CROP.get(),
                 this.applyExplosionDecay(ModBlocks.STRAWBERRY_CROP.get(),
-                        LootTable.lootTable().withPool(LootPool.lootPool()
-                                        .add(LootItem.lootTableItem(ModItems.STRAWBERRY.get())))
+                        LootTable.lootTable()
+                                .withPool(LootPool.lootPool()
+                                        .add(LootItem.lootTableItem(ModItems.STRAWBERRY_SEEDS.get())))
+                                .withPool(LootPool.lootPool()
+                                        .when(lootitemcondition$builder_strawberry)
+                                        .add(LootItem.lootTableItem(ModItems.STRAWBERRY_SEEDS.get())
+                                                .apply(SetItemCountFunction
+                                                        .setCount(UniformGenerator.between(1,2)))))
                                 .withPool(LootPool.lootPool()
                                         .when(lootitemcondition$builder_strawberry)
                                         .add(LootItem.lootTableItem(ModItems.STRAWBERRY.get())
-                                                .apply(ApplyBonusCount
-                                                        .addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2))))));
+                                                .apply(SetItemCountFunction
+                                                        .setCount(UniformGenerator.between(2,3)))))));
 
 
         this.add(ModBlocks.ORE_FLUORITE.get(),

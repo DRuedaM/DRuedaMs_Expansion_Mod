@@ -3,8 +3,8 @@
     "particle": "druedams_expansion_mod:block/pizza_side",
     "bottom": "druedams_expansion_mod:block/pizza_side",
     "top": "druedams_expansion_mod:block/pizza_top",
-    "side": "druedams_expansion_mod:block/pizza_side",
-    "inside": "druedams_expansion_mod:block/pizza_side"
+    "side": "druedams_expansion_mod:block/pizza_inner",
+    "inside": "druedams_expansion_mod:block/pizza_inner"
   },
   "elements": [
     {   "from": [ 9, 0, 1 ],
