@@ -26,7 +26,7 @@ public class ModFoods
      */
     public static final FoodProperties FRIED_CHICKEN = new FoodProperties.Builder().nutrition(5).
             saturationMod(0.4f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED,
-                            1000), 1f).meat().build();
+                            1500), 1f).meat().build();
 
     public static final FoodProperties RAW_FRIED_CHICKEN = new FoodProperties.Builder().nutrition(1).
             saturationMod(0.2f).effect(() -> new MobEffectInstance(MobEffects.HUNGER,
@@ -34,7 +34,7 @@ public class ModFoods
 
     public static final FoodProperties PEPSI = new FoodProperties.Builder().nutrition(2).
             saturationMod(0f).effect(() -> new MobEffectInstance(MobEffects.WITHER,
-                    500), 0.1f).effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 500), 0.5f).alwaysEat().build();
+                    500), 1f).effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 500), 1f).alwaysEat().build();
 
     public static final FoodProperties CAMPURRIANA = new FoodProperties.Builder().nutrition(3).
             saturationMod(0.2f).alwaysEat().fast().effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 700), 1).build();
@@ -62,10 +62,10 @@ public class ModFoods
 
     public static final FoodProperties DURUM = new FoodProperties.Builder().nutrition(10).
             saturationMod(1f).effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 250), 0.25f)
-            .effect(() -> new MobEffectInstance(MobEffects.INVISIBILITY, 3500), 1).build();
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 3500), 1).build();
 
     public static final FoodProperties BURGER = new FoodProperties.Builder().nutrition(10).
-            saturationMod(0.7f).effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2500), 1).build();
+            saturationMod(0.7f).effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 3500), 1).build();
 
     public static final FoodProperties FOOD_COMBINED = new FoodProperties.Builder().nutrition(8).
             saturationMod(0.5f).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3500), 1).build();

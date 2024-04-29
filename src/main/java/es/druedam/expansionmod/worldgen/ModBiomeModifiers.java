@@ -12,12 +12,19 @@ import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase encargada de registrar modificadores
+ *     de bioma, agregar nuevos elementos o modificar
+ *     ya existentes, para generar en el mundo objetos o entidades
+ * </p>
+ */
 public class ModBiomeModifiers
 {
     public static final ResourceKey<BiomeModifier> ADD_FLUORITE_SEVEN_ORE = registerKey("add_fluorite_seven_ore");
     public static final ResourceKey<BiomeModifier> ADD_FLUORITE_FIVE_ORE = registerKey("add_fluorite_five_ore");
     public static final ResourceKey<BiomeModifier> ADD_FLUORITE_TWO_ORE = registerKey("add_fluorite_two_ore");
-
 
     public static void bootstrap(BootstapContext<BiomeModifier> context)
     {
@@ -38,7 +45,6 @@ public class ModBiomeModifiers
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FLUORITE_ORE_PLACED_TWO_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
-
 
     }
 

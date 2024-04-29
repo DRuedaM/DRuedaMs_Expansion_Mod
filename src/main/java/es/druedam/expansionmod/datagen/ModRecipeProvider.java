@@ -18,7 +18,13 @@ import java.util.List;
 import java.util.function.Consumer;
 
 /**
- * Clase donde se definen todos los crafteos de los items
+ * @author David Rueda
+ * <p>
+ *     Clase que automatiza la generacion
+ *     de ficheros json que contienen las recetas
+ *     para la creacion de los items del juego que hemos creado
+ * </p>
+ * @see RecipeProvider
  */
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder
 {

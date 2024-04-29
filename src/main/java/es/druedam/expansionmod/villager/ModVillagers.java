@@ -11,6 +11,17 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase encargada de registrar nuevas profesiones
+ *     para aldeanos del juego base. En nuestro caso
+ *     hemos creado un nuevo bloque de trabajo, el
+ *     bloque de nota musical, a su vez hemos creado la profesion llamada
+ *     michael jackson, el cual tiene unos intercambios nuevos, un sonido
+ *     nuevo de trabajo y una apariencia nueva
+ * </p>
+ */
 public class ModVillagers
 {
     public static final DeferredRegister<PoiType> POI_TYPES =
