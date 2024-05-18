@@ -47,7 +47,6 @@ public class ModBiomeModifiers
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
     }
-
     private static ResourceKey<BiomeModifier> registerKey(String name)
     {
         return ResourceKey.create(ForgeRegistries.Keys.BIOME_MODIFIERS, new ResourceLocation(ExpansionModMain.MOD_ID, name));

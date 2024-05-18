@@ -16,6 +16,14 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Function;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase que automatiza la generacion
+ *     de ficheros JSON con los bloques del mod
+ * </p>
+ * @see BlockStateProvider
+ */
 public class ModBlockStateProvider extends BlockStateProvider
 {
 

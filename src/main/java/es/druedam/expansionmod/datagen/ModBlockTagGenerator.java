@@ -11,6 +11,14 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase para automatizar la creacion de ficheros
+ *     JSON donde se indican los tags a los items y bloques del mod
+ * </p>
+ * @see BlockTagsProvider
+ */
 public class ModBlockTagGenerator extends BlockTagsProvider
 {
     public ModBlockTagGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {

@@ -4,6 +4,13 @@ import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase que define metodos para colocar
+ *     ores en distintos niveles de altura del mundo
+ * </p>
+ */
 public class ModOrePlacement
 {
     public static List<PlacementModifier> orePlacement(PlacementModifier pCountPlacement, PlacementModifier pHeightRange) {

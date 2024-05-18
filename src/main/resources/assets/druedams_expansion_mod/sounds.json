@@ -2,12 +2,11 @@
   "michael_jackson_ambient": {
     "subtitles": "sounds.druedams_expansion_mod.michael_jackson_ambient",
     "sounds": [
-      "druedams_expansion_mod:michael_jackson_ambient",
-      "druedams_expansion_mod:michael_jackson_yes",
-      "druedams_expansion_mod:michael_jackson_no",
-      "druedams_expansion_mod:michael_jackson_hurt",
-      "druedams_expansion_mod:michael_jackson_celebrate",
-      "druedams_expansion_mod:michael_jackson_death"
+      "druedams_expansion_mod:michael_jackson_ambient1",
+      "druedams_expansion_mod:michael_jackson_ambient2",
+      "druedams_expansion_mod:michael_jackson_ambient3",
+      "druedams_expansion_mod:michael_jackson_ambient4",
+      "druedams_expansion_mod:michael_jackson_ambient5"
     ]
   }
 }

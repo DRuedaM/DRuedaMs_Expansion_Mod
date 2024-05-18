@@ -16,7 +16,14 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
 import java.util.List;
 
-public class ModConfiguresFeatures
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase donde configuramos los elementos
+ *     que vamos a colocar en la generacion automatica
+ * </p>
+ */
+public class ModConfiguredFeatures
 {
     public static final ResourceKey<ConfiguredFeature<?,?>> OVERWORLD_FLUORITE_ORE_KEY = registerKey("flurite_ore_key");
     public static final ResourceKey<ConfiguredFeature<?,?>> OVERWORLD_DEEPSLATE_FLUORITE_ORE_KEY = registerKey("deepslate_flurite_ore_key");
@@ -34,13 +41,10 @@ public class ModConfiguresFeatures
         register(context, OVERWORLD_FLUORITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFluoriteOres, 9));
         register(context, OVERWORLD_DEEPSLATE_FLUORITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFluoriteOres2, 9));
     }
-
-
     public static ResourceKey<ConfiguredFeature<?,?>> registerKey(String name)
     {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation(ExpansionModMain.MOD_ID, name));
     }
-
     private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register(BootstapContext<ConfiguredFeature<?,?>> context,
                                                                                           ResourceKey<ConfiguredFeature<?,?>> key, F feature, FC configuration)
     {

@@ -1,6 +1,5 @@
 package es.druedam.expansionmod;
 
-import com.mojang.logging.LogUtils;
 import es.druedam.expansionmod.block.ModBlocks;
 import es.druedam.expansionmod.item.CreativeModeTabs;
 import es.druedam.expansionmod.item.ModItems;
@@ -12,7 +11,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.slf4j.Logger;
 
 /** @author David Rueda
  * <p>
@@ -28,14 +26,11 @@ public class ExpansionModMain
     // La variable define el identificador unico del mod
     public static final String MOD_ID = "druedams_expansion_mod";
 
-    // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
-
     public ExpansionModMain()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        //Aqui registramos todas las clases que contengan items/bloques y demas para agregarlos en el juego original
+        //Aqui registramos todas las clases que contengan datos que van a ser agregados al programa base
         CreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

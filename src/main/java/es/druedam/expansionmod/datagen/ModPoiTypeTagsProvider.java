@@ -11,6 +11,16 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase que genera ficheros JSON automaticamente
+ *     encargada de generarlos para los POI creados en el mod,
+ *     en este caso se indica que se agrega un tag poi para el bloque
+ *     de nota musical
+ * </p>
+ * @see PoiTypeTagsProvider
+ */
 public class ModPoiTypeTagsProvider extends PoiTypeTagsProvider
 {
 

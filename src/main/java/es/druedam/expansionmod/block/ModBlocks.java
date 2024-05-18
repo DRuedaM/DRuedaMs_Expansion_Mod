@@ -20,8 +20,12 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 /**
- * Clase que se usa para registrar todos los objetos
- * de tipo bloque al juego base
+ * @author David Rueda
+ * <p>
+ *   Clase que se usa para registrar todos los objetos
+ *   de tipo bloque al juego base
+ * </p>
+ * @see ModBlocks#registerBlockItem(String, RegistryObject) 
  */
 public class ModBlocks
 {
@@ -43,15 +47,15 @@ public class ModBlocks
     public static final RegistryObject<Block> STRAWBERRY_CROP = BLOCKS.register("strawberry_crop",
             () -> new StrawberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().noOcclusion()));
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
-        return  toReturn;
-    }
-
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, int maxStacks){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, maxStacks);
+        return  toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn);
         return  toReturn;
     }
 

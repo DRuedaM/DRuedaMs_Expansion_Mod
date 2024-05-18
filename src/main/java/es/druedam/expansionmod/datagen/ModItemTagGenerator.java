@@ -10,6 +10,15 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase que genera ficheros JSON
+ *     automaticamente con los tags de los items
+ *     que indiquemos del mod
+ * </p>
+ * @see ItemTagsProvider
+ */
 public class ModItemTagGenerator extends ItemTagsProvider
 {
     public ModItemTagGenerator(PackOutput p_275343_, CompletableFuture<HolderLookup.Provider> p_275729_, CompletableFuture<TagLookup<Block>> p_275322_, @Nullable ExistingFileHelper existingFileHelper) {

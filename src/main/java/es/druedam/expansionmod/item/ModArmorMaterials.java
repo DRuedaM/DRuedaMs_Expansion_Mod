@@ -13,6 +13,16 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.EnumMap;
 import java.util.function.Supplier;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase donde se definen
+ *     nuevos tipos de armadura y sus caracteristicas
+ *     cada parte de la armadura tiene una defensa,
+ *     luego cada armadura en general tiene un multiplicador de durabilidad
+ * </p>
+ * @see ArmorMaterial
+ */
 public enum ModArmorMaterials implements ArmorMaterial {
 
     FLUORITE("fluorite", 25, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266654_) -> {
@@ -86,9 +96,6 @@ public enum ModArmorMaterials implements ArmorMaterial {
         return this.toughness;
     }
 
-    /**
-     * Gets the percentage of knockback resistance provided by armor of the material.
-     */
     public float getKnockbackResistance() {
         return this.knockbackResistance;
     }

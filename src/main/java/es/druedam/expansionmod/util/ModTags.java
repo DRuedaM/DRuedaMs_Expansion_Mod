@@ -8,6 +8,15 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
+/**
+ * @author David Rueda
+ * <p>
+ *     Clase donde se definen los tags
+ *     necesarios para implementarlos en el juego,
+ *     se pueden indicar tags para los items y para los bloques
+ *     y su funcionamiento
+ * </p>
+ */
 public class ModTags
 {
     public static class Items

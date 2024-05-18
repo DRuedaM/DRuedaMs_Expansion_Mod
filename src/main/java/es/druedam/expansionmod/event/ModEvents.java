@@ -31,7 +31,6 @@ import java.util.List;
 @Mod.EventBusSubscriber(modid = ExpansionModMain.MOD_ID)
 public class ModEvents
 {
-
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {
         if (event.getType() == VillagerProfession.FARMER) {
