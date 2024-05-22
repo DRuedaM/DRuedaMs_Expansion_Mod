@@ -17,7 +17,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
  */
 public class ModFoods
 {
-
     /**
      * El constructor para el alimento necesita como parametros la nutricion del alimento
      * la saturacion y si queremos que el alimento agregue algun efecto a nuestro jugador al comer

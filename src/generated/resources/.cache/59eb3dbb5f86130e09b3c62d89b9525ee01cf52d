@@ -1,0 +1,5 @@
+// 1.20.1	2024-05-22T19:47:12.4452137	Loot Tables
+c685944a2748ec3c83780c16a92559d250c2f5ae data/druedams_expansion_mod/loot_tables/blocks/deepslate_fluorite.json
+07d2788a51d98f8fb07a187fc6895f272afeabf6 data/druedams_expansion_mod/loot_tables/blocks/ore_fluorite.json
+db3880e711d3fc82cd84fa93eab186bcd4708767 data/druedams_expansion_mod/loot_tables/blocks/strawberry_crop.json
+302acc2ba2d53b729e38416cfbf2cc6b6a09bcb0 data/druedams_expansion_mod/loot_tables/blocks/tomato_crop.json

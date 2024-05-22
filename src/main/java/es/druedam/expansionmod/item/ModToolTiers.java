@@ -23,5 +23,5 @@ public class ModToolTiers
     public static final Tier FLUORITE = TierSortingRegistry.registerTier(
             new ForgeTier(5,200,6.0f,2.0f,14,
             ModTags.Blocks.NEEDS_FLUORITE, () -> Ingredient.of(ModItems.FLUORITE_INGOT.get())),
-            new ResourceLocation(ExpansionModMain.MOD_ID, "fluorite"), List.of(Tiers.DIAMOND), List.of(Tiers.NETHERITE));
+            new ResourceLocation(ExpansionModMain.MOD_ID, "fluorite"), List.of(Tiers.IRON), List.of(Tiers.DIAMOND));
 }

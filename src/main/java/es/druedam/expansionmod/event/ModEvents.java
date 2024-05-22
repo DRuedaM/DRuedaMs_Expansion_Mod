@@ -33,7 +33,8 @@ public class ModEvents
 {
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {
-        if (event.getType() == VillagerProfession.FARMER) {
+        if (event.getType() == VillagerProfession.FARMER)
+        {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
             //These are the trades for the farmer villager
@@ -54,10 +55,10 @@ public class ModEvents
                     new ItemStack(ModItems.CHEESE.get(), 3),
                     10, 16, 0.035f
             ));
-
         }
 
-        if (event.getType() == ModVillagers.MICHAEL_JACKSON.get()) {
+        if (event.getType() == ModVillagers.MICHAEL_JACKSON.get())
+        {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
             //These are the trades for michael jackson, containing all the music discs of the game
